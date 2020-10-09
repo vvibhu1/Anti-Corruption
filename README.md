@@ -1,4 +1,8 @@
 # Anti-Corruption
 
-1. All the files 
-2. All the code 
+
+Indicators 
+
+
+
+https://docs.google.com/document/d/1rkaEWpxiKJtpsePBTsoUMpwy7N4zovRsWQH8SKNhpXI/edit?usp=sharing
