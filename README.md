@@ -22,4 +22,4 @@ Datasets from step 0.5 and 1 of data wrangling:
 https://drive.google.com/drive/u/0/folders/1mpUHz5bA2ZPXaHvFPBQRCplmdp3ktccM
 
 
-#Include rural population column after imputation on monday
+# Include rural population column after imputation on monday
