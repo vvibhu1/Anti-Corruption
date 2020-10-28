@@ -28,8 +28,4 @@ https://drive.google.com/drive/u/0/folders/1mpUHz5bA2ZPXaHvFPBQRCplmdp3ktccM
 
 ### XGBOOST STEPS - Xgboost in python after all these 3 commands in terminal
 
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
-
-!brew install libomp
-
-!pip3 install xgboost
+https://xgboost.readthedocs.io/en/latest/build.html#install-with-pip-simple-method
