@@ -1,0 +1,233 @@
+---
+title: "models for regression"
+author: "xiang fan"
+date: "10/12/2020"
+output: html_document
+---
+
+```{r}
+library(ISLR)
+library(leaps)
+library(glmnet)
+```
+
+
+```{r}
+df<- read.csv("C:/Users/Administrator/Desktop/final_clean .csv")
+```
+#delete the rows with N/A for cpi column
+```{r}
+nrow(df)
+df<-na.omit(df)
+nrow(df)
+```
+# delete the first two columns(which is useless)
+```{r}
+df<-df[,-1]
+df<-df[,-1]
+```
+
+#change categories of 'region_USAID' to integer
+```{r}
+unique(df['region_USAID'])#find how many catefories this column has
+```
+```{r}
+#change them to 0-5
+levels(df$region_USAID)[1] <- 0 #	East Asia and Pacific (EAP)
+levels(df$region_USAID)[2] <- 1 #Europe and Eurasia (E&E)
+levels(df$region_USAID)[3] <- 2#Latin America and Caribbean (LAC)
+levels(df$region_USAID)[4] <- 3#Middle East and North Africa (MENA)
+levels(df$region_USAID)[5] <- 4#South and Central Asia (SCA)
+levels(df$region_USAID)[6] <- 5#Sub-Saharan Africa (SSA)
+```
+
+# change categories of 'income ' to integer
+```{r}
+unique(df['IncomeGroup'])
+```
+```{r}
+#change them to 0-3
+levels(df$IncomeGroup)[1] <- 0 #	High income
+levels(df$IncomeGroup)[2] <- 1 #low income
+levels(df$IncomeGroup)[3] <- 2 #Lower middle income
+levels(df$IncomeGroup)[4] <- 3 #Upper middle income
+```
+
+#delete these Duplicate rows
+```{r}
+df2=df[,-1]
+df2=df2[!duplicated(df2),]
+```
+#because we just want to find the relationship between cpi and indicators,we donot want to use these columns to regression,so delete them:Index,Country Code,Country Name,region_WorldBank
+```{r}
+df3 <- df2[,-c(1,3,7)]
+```
+#try to hist several columns
+```{r}
+hist(df3$Access.To.Electricity..Rural....Of.Rural.Population.)
+hist(df3$Food.Production.Index..2004.2006...100.)
+hist(df3$Agricultural.Land....Of.Land.Area.)
+hist(df3$Urban.Population....Of.Total.Population.)
+```
+# we standardize the continuous features
+```{r}
+df4<-df3
+```
+
+```{r}
+df4$Year<-scale(df4$Year)
+df4$Access.To.Electricity..Rural....Of.Rural.Population.<-scale(df4$Access.To.Electricity..Rural....Of.Rural.Population.)
+df4$Food.Production.Index..2004.2006...100.<-scale(df4$Food.Production.Index..2004.2006...100.)
+df4$Agricultural.Land....Of.Land.Area.<-scale(df4$Agricultural.Land....Of.Land.Area.)
+df4$Urban.Population....Of.Total.Population.<-scale(df4$Urban.Population....Of.Total.Population.)
+df4$Population.Growth..Annual...<-scale(df4$Population.Growth..Annual...)
+df4$Mortality.Rate..Under.5..Per.1.000.Live.Births.<-scale(df4$Mortality.Rate..Under.5..Per.1.000.Live.Births.)
+df4$Foreign.Direct.Investment..Net.Inflows....Of.Gdp.<-scale(df4$Foreign.Direct.Investment..Net.Inflows....Of.Gdp.)
+df4$Price.Level.Ratio.Of.Ppp.Conversion.Factor..Gdp..To.Market.Exchange.Rate<-scale(df4$Price.Level.Ratio.Of.Ppp.Conversion.Factor..Gdp..To.Market.Exchange.Rate)
+df4$Net.Primary.Income..Net.Income.From.Abroad...Current.Us..<-scale(df4$Net.Primary.Income..Net.Income.From.Abroad...Current.Us..)
+df4$Gross.Savings....Of.Gdp.<-scale(df4$Gross.Savings....Of.Gdp.)
+df4$Gni.Growth..Annual...<-scale(df4$Gni.Growth..Annual...)
+df4$Gross.Domestic.Savings....Of.Gdp.<-scale(df4$Gross.Domestic.Savings....Of.Gdp.)
+df4$Industry..Including.Construction...Value.Added....Of.Gdp.<-scale(df4$Industry..Including.Construction...Value.Added....Of.Gdp.)
+df4$Imports.Of.Goods.And.Services....Of.Gdp.<-scale(df4$Imports.Of.Goods.And.Services....Of.Gdp.)
+df4$Exports.Of.Goods.And.Services....Of.Gdp.<-scale(df4$Exports.Of.Goods.And.Services....Of.Gdp.)
+df4$General.Government.Final.Consumption.Expenditure....Of.Gdp.<-scale(df4$General.Government.Final.Consumption.Expenditure....Of.Gdp.)
+df4$Inflation..Consumer.Prices..Annual...<-scale(df4$Inflation..Consumer.Prices..Annual...)
+df4$Inflation..Gdp.Deflator..Linked.Series..Annual...<-scale(df4$Inflation..Gdp.Deflator..Linked.Series..Annual...)
+df4$Public.Credit.Registry.Coverage....Of.Adults.<-scale(df4$Public.Credit.Registry.Coverage....Of.Adults.)
+df4$Private.Credit.Bureau.Coverage....Of.Adults.<-scale(df4$Private.Credit.Bureau.Coverage....Of.Adults.)
+df4$Domestic.Credit.To.Private.Sector....Of.Gdp.<-scale(df4$Domestic.Credit.To.Private.Sector....Of.Gdp.)
+df4$Lending.Interest.Rate....<-scale(df4$Lending.Interest.Rate....)
+df4$Deposit.Interest.Rate....<-scale(df4$Deposit.Interest.Rate....)
+df4$Broad.Money.Growth..Annual...<-scale(df4$Broad.Money.Growth..Annual...)
+df4$Broad.Money....Of.Gdp.<-scale(df4$Broad.Money....Of.Gdp.)
+df4$Claims.On.Private.Sector..Annual.Growth.As...Of.Broad.Money.<-scale(df4$Claims.On.Private.Sector..Annual.Growth.As...Of.Broad.Money.)
+df4$Claims.On.Central.Government..Annual.Growth.As...Of.Broad.Money.<-scale(df4$Claims.On.Central.Government..Annual.Growth.As...Of.Broad.Money.)
+df4$Total.Reserves....Of.Total.External.Debt.<-scale(df4$Total.Reserves....Of.Total.External.Debt.)
+df4$Bank.Liquid.Reserves.To.Bank.Assets.Ratio....<-scale(df4$Bank.Liquid.Reserves.To.Bank.Assets.Ratio....)
+df4$Foreign.Direct.Investment..Net.Outflows....Of.Gdp.<-scale(df4$Foreign.Direct.Investment..Net.Outflows....Of.Gdp.)
+df4$Adolescent.Fertility.Rate..Births.Per.1.000.Women.Ages.15.19.<-scale(df4$Adolescent.Fertility.Rate..Births.Per.1.000.Women.Ages.15.19.)
+df4$Prevalence.Of.Undernourishment....Of.Population.<-scale(df4$Prevalence.Of.Undernourishment....Of.Population.)
+df4$Refugee.Population.By.Country.Or.Territory.Of.Origin<-scale(df4$Refugee.Population.By.Country.Or.Territory.Of.Origin)
+df4$Domestic.Private.Health.Expenditure....Of.Current.Health.Expenditure.<-scale(df4$Domestic.Private.Health.Expenditure....Of.Current.Health.Expenditure.)
+df4$Domestic.General.Government.Health.Expenditure....Of.Gdp.<-scale(df4$Domestic.General.Government.Health.Expenditure....Of.Gdp.)
+df4$Lifetime.Risk.Of.Maternal.Death....<-scale(df4$Lifetime.Risk.Of.Maternal.Death....)
+df4$Mortality.Rate..Neonatal..Per.1.000.Live.Births.<-scale(df4$Mortality.Rate..Neonatal..Per.1.000.Live.Births.)
+df4$Export.Value.Index..2000...100.<-scale(df4$Export.Value.Index..2000...100.)
+df4$Import.Value.Index..2000...100.<-scale(df4$Import.Volume.Index..2000...100.)
+df4$Trade.In.Services....Of.Gdp.<-scale(df4$Trade.In.Services....Of.Gdp.)
+df4$Merchandise.Exports.To.Low..And.Middle.Income.Economies.Within.Region....Of.Total.Merchandise.Exports.<-scale(df4$Merchandise.Exports.To.Low..And.Middle.Income.Economies.Within.Region....Of.Total.Merchandise.Exports.)
+df4$Merchandise.Exports.To.High.Income.Economies....Of.Total.Merchandise.Exports.<-scale(df4$Merchandise.Exports.To.High.Income.Economies....Of.Total.Merchandise.Exports.)
+df4$Merchandise.Exports.To.Low..And.Middle.Income.Economies.Outside.Region....Of.Total.Merchandise.Exports.<-scale(df4$Merchandise.Exports.To.Low..And.Middle.Income.Economies.Outside.Region....Of.Total.Merchandise.Exports.)
+df4$Merchandise.Imports.From.Low..And.Middle.Income.Economies.Within.Region....Of.Total.Merchandise.Imports.<-scale(df4$Merchandise.Imports.From.Low..And.Middle.Income.Economies.Within.Region....Of.Total.Merchandise.Imports.)
+df4$Merchandise.Imports.From.Low..And.Middle.Income.Economies.Outside.Region....Of.Total.Merchandise.Imports.<-scale(df4$Merchandise.Imports.From.Low..And.Middle.Income.Economies.Outside.Region....Of.Total.Merchandise.Imports.)
+df4$Merchandise.Imports.From.High.Income.Economies....Of.Total.Merchandise.Imports.<-scale(df4$Merchandise.Imports.From.High.Income.Economies....Of.Total.Merchandise.Imports.)
+df4$Net.Barter.Terms.Of.Trade.Index..2000...100.<-scale(df4$Net.Barter.Terms.Of.Trade.Index..2000...100.)
+df4$Merchandise.Trade....Of.Gdp.<-scale(df4$Merchandise.Trade....Of.Gdp.)
+df4$Total.Tax.And.Contribution.Rate....Of.Profit.<-scale(df4$Total.Tax.And.Contribution.Rate....Of.Profit.)
+df4$Intentional.Homicides..Per.100.000.People.<-scale(df4$Intentional.Homicides..Per.100.000.People.)
+df4$Military.Expenditure....Of.General.Government.Expenditure.<-scale(df4$Military.Expenditure....Of.General.Government.Expenditure.)
+df4$Military.Expenditure....Of.Gdp.<-scale(df4$Military.Expenditure....Of.Gdp.)
+df4$Population.Ages.0.14....Of.Total.Population.<-scale(df4$Population.Ages.0.14....Of.Total.Population.)
+df4$Access.To.Clean.Fuels.And.Technologies.For.Cooking....Of.Population.<-scale(df4$Access.To.Clean.Fuels.And.Technologies.For.Cooking....Of.Population.)
+df4$People.Using.At.Least.Basic.Drinking.Water.Services..Rural....Of.Rural.Population.<-scale(df4$People.Using.At.Least.Basic.Drinking.Water.Services..Rural....Of.Rural.Population.)
+df4$People.Using.At.Least.Basic.Sanitation.Services..Rural....Of.Rural.Population.<-scale(df4$People.Using.At.Least.Basic.Sanitation.Services..Rural....Of.Rural.Population.)
+df4$Labor.Force.Participation.Rate..Total....Of.Total.Population.Ages.15.64...Modeled.Ilo.Estimate.<-scale(df4$Labor.Force.Participation.Rate..Total....Of.Total.Population.Ages.15.64...Modeled.Ilo.Estimate.)
+df4$Unemployment..Total....Of.Total.Labor.Force...Modeled.Ilo.Estimate.<-scale(df4$Unemployment..Total....Of.Total.Labor.Force...Modeled.Ilo.Estimate.)
+df4$Gdp.Per.Person.Employed..Constant.2017.Ppp...<-scale(df4$Gdp.Per.Person.Employed..Constant.2017.Ppp...)
+df4$Wage.And.Salaried.Workers..Total....Of.Total.Employment...Modeled.Ilo.Estimate.<-scale(df4$Wage.And.Salaried.Workers..Total....Of.Total.Employment...Modeled.Ilo.Estimate.)
+df4$Import.Volume.Index..2000...100.<-scale(df4$Import.Volume.Index..2000...100.)
+df4$Trade....Of.Gdp.<-scale(df4$Trade....Of.Gdp.)
+```
+
+#select trainset and testset randomly
+
+```{r}
+set.seed(1)
+trainrow=sample(nrow(df4),size=0.7*nrow(df4))
+testrow=-(trainrow)
+```
+
+```{r}
+train=df4[trainrow, ]
+test=df4[testrow, ]
+```
+
+#linear regression
+```{r}
+lm_model<-lm(train$Corruption.Perception.Index~.,data=train)
+summary(lm_model)
+```
+
+
+
+```{r}
+mean((mpg-predict(lm_model ,df))[-train ]^2)
+```
+
+#stepwise selection
+```{r}
+regfit=regsubsets(train$Corruption.Perception.Index~.,data=train, nvmax=66,method = "seqrep")
+summary(regfit)
+```
+```{r}
+reg.summary=summary(regfit)
+names(reg.summary) # check what additional information are included in the regression output
+```
+```{r}
+reg.summary$bic #check BIC of all models 
+```
+
+```{r}
+plot(reg.summary$bic,xlab="Number of Variables",ylab="BIC") #plot bic for different models
+```
+
+```{r}
+best_n=which.min(reg.summary$bic) #find the model with the lowest BIC
+best_n
+```
+
+```{r}
+coef(regfit,id=best_n) #check what variables are included in the model with the lowest BIC as well as its coefficients
+```
+#so as we can see from the result of forward stepwise model, only 25 variables are significant for cpi(3 are type of regions)
+
+#Create confusion matrix for training set
+```{r}
+coef.train=coef(regfit,id=best_n)
+train.mat=model.matrix(train$Corruption.Perception.Index~.,data=train)
+pred=train.mat[,names(coef.train)]%*%coef.train
+bestsub_error=mean((train$Corruption.Perception.Index-pred)^2)
+bestsub_error
+```
+
+#try lasso regression
+```{r}
+x.train=model.matrix(train$Corruption.Perception.Index~.,train)#put regressors from training set into a matrix
+y.train=train$Corruption.Perception.Index #label for training set
+x.test=model.matrix(test$Corruption.Perception.Index~.,test) #put regressors from test set into a matrix
+y.test=test$Corruption.Perception.Index#label for test set
+```
+
+```{r}
+lasso.mod=glmnet(x.train,y.train,alpha=1) #build a LASSO regression
+cv.out=cv.glmnet(x.train,y.train,alpha=1) # use 10 fold cv to select shrinkage parameter
+bestlam_l=cv.out$lambda.min #find the best shrinkage parameter
+bestlam_l
+```
+
+```{r}
+lasso.pred=predict(lasso.mod,s=bestlam_l,newx=x.test) #making prediction using the best shrinkage parameter
+lasso.err=mean((lasso.pred-y.test)^2) #calculate MSE
+lasso.err
+```
+
+```{r}
+plot(cv.out)
+```
+```{r}
+cat("Coefficients:", as.numeric(coef(cv.out)), fill = TRUE)
+cat("Number of Zero Coefficients",sum(abs(coef(cv.out))<1e-8), fill=TRUE)
+```
+#we can find there are 19 indicators are not related to cpi
+#so the significant columns to use are :Year,region_USAID,Agricultural.Land....Of.Land.Area., Urban.Population....Of.Total.Population.,Foreign.Direct.Investment..Net.Inflows....Of.Gdp. , Net.Primary.Income..Net.Income.From.Abroad...Current.Us..,Industry..Including.Construction...Value.Added....Of.Gdp. ,General.Government.Final.Consumption.Expenditure....Of.Gdp., Public.Credit.Registry.Coverage....Of.Adults. ,Domestic.Credit.To.Private.Sector....Of.Gdp.,Deposit.Interest.Rate.... , Broad.Money....Of.Gdp. , Domestic.Private.Health.Expenditure....Of.Current.Health.Expenditure. , Mortality.Rate..Neonatal..Per.1.000.Live.Births.,Import.Value.Index..2000...100. ,Merchandise.Exports.To.Low..And.Middle.Income.Economies.Within.Region....Of.Total.Merchandise.Exports. ,  Merchandise.Imports.From.High.Income.Economies....Of.Total.Merchandise.Imports., Merchandise.Trade....Of.Gdp. ,Total.Tax.And.Contribution.Rate....Of.Profit. ,Population.Ages.0.14....Of.Total.Population. ,People.Using.At.Least.Basic.Drinking.Water.Services..Rural....Of.Rural.Population. ,Gdp.Per.Person.Employed..Constant.2017.Ppp... , Wage.And.Salaried.Workers..Total....Of.Total.Employment...Modeled.Ilo.Estimate. (total 23 variables)
