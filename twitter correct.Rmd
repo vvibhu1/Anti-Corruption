@@ -1,0 +1,67 @@
+---
+title: "Untitled"
+author: "xiang fan"
+date: "11/4/2020"
+output: html_document
+---
+
+```{r}
+install.packages("ROAuth")
+install.packages("twitteR")
+install.packages("streamR")
+```
+
+```{r}
+# Load packages
+require(twitteR)
+library(ROAuth)
+
+# Parameters configuration
+reqURL <- "https://api.twitter.com/oauth/request_token"
+accessURL <- "https://api.twitter.com/oauth/access_token"
+authURL <- "https://api.twitter.com/oauth/authorize"
+
+options(httr_oauth_cache=T)
+
+# Keys and tokens
+consumer_key <- "T9Fe4YRpy9E0zim4pjXbFBWjj"   
+consumer_secret <- "qpUhj1bUWpOjUzxhJmv8qUj0CsQ2UeVkjoN8N59R2f9k1Pn7Fs"
+access_token <- "1323471674566758401-FifCm3dh9m4Bl88YBPpi9S6p3xH05h"
+access_secret <- "mUdZ8FDaB2noc1EYISLK75kmWVfbeONkgmRQI7BoXXQvH"
+
+# twitteR authentication
+setup_twitter_oauth(consumer_key, consumer_secret, access_token, access_secret)
+
+# streamR authentication
+credentials_file <- "my_oauth.Rdata"
+if (file.exists(credentials_file)){
+    load(credentials_file)
+} else {
+    cred <- OAuthFactory$new(consumerKey=consumer_key, consumerSecret=consumer_secret, requestURL=reqURL, accessURL=accessURL, authURL=authURL)
+    cred$handshake(cainfo=system.file("CurlSSL", "cacert.pem", package="RCurl"))
+    save(cred, file=credentials_file)
+}
+```
+```{r}
+library(twitteR)
+
+# Capturing Twitter data 
+tweets <- searchTwitter("corruption",n=1000)
+```
+
+```{r}
+df<-twListToDF(tweets)#transform data to df
+```
+
+#for location
+```{r}
+install.packages("rtweet")
+library(rtweet)
+```
+
+```{r}
+a<-search_tweets("corruption", geocode=lookup_coords("usa"), n=10000, include_rts=FALSE)
+```
+
+
+
