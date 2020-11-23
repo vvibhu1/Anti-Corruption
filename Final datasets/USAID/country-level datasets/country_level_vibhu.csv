@@ -1,0 +1,75 @@
+,country,corruption_initial,stability_initial,stability_median,numberofprojects,corruption_median,change_s,change_c
+0,Afghanistan,High Corruption,Unstable,Very Unstable,28,Very High Corruption,Worse,Worse
+1,Albania,High Corruption,Unstable,Unstable,8,High Corruption,Same,Same
+2,Angola,High Corruption,Unstable,Unstable,1,High Corruption,Same,Same
+3,Armenia,High Corruption,Unstable,Unstable,4,High Corruption,Same,Same
+4,Azerbaijan,High Corruption,Unstable,Unstable,5,High Corruption,Same,Same
+5,Bangladesh,High Corruption,Very Unstable,Very Unstable,3,High Corruption,Same,Same
+6,Bolivia,High Corruption,Unstable,Unstable,2,High Corruption,Same,Same
+7,Bosnia and Herzegovina,High Corruption,Unstable,Unstable,6,High Corruption,Same,Same
+8,Bulgaria,High Corruption,Unstable,Unstable,1,High Corruption,Same,Same
+9,Burundi,High Corruption,Very Unstable,Very Unstable,2,High Corruption,Same,Same
+10,Cambodia,High Corruption,Unstable,Unstable,7,High Corruption,Same,Same
+11,Colombia,High Corruption,Very Unstable,Unstable,4,High Corruption,Better,Same
+12,Democratic Republic of Congo,Very High Corruption,Very Unstable,Very Unstable,2,High Corruption,Same,Better
+13,Djibouti,High Corruption,Unstable,Unstable,1,High Corruption,Same,Same
+14,Dominican Republic,High Corruption,Unstable,Unstable,7,High Corruption,Same,Same
+15,East Timor,High Corruption,Unstable,Unstable,6,High Corruption,Same,Same
+16,Ecuador,High Corruption,Unstable,Unstable,3,High Corruption,Same,Same
+17,Egypt,High Corruption,Unstable,Unstable,9,High Corruption,Same,Same
+18,El Salvador,High Corruption,Unstable,Unstable,4,High Corruption,Same,Same
+19,Ethiopia,High Corruption,Very Unstable,Very Unstable,1,High Corruption,Same,Same
+20,Georgia,High Corruption,Unstable,Unstable,4,High Corruption,Same,Same
+21,Ghana,High Corruption,Unstable,Unstable,1,High Corruption,Same,Same
+22,Guatemala,High Corruption,Unstable,Unstable,5,High Corruption,Same,Same
+23,Guinea,High Corruption,Very Unstable,Very Unstable,1,High Corruption,Same,Same
+24,Guyana,High Corruption,Unstable,Unstable,2,High Corruption,Same,Same
+25,Haiti,High Corruption,Unstable,Unstable,1,High Corruption,Same,Same
+26,Honduras,High Corruption,Unstable,Unstable,3,High Corruption,Same,Same
+27,Indonesia,High Corruption,Unstable,Unstable,17,High Corruption,Same,Same
+28,Iraq,Very High Corruption,Very Unstable,Very Unstable,8,Very High Corruption,Same,Same
+29,Jamaica,High Corruption,Unstable,Unstable,1,High Corruption,Same,Same
+30,Jordan,High Corruption,Unstable,Unstable,7,High Corruption,Same,Same
+31,Kazakhstan,High Corruption,Unstable,Unstable,4,High Corruption,Same,Same
+32,Kenya,High Corruption,Unstable,Very Unstable,4,High Corruption,Worse,Same
+33,Kosovo,High Corruption,Unstable,Unstable,6,High Corruption,Same,Same
+34,Kyrgyzstan,High Corruption,Unstable,Unstable,7,High Corruption,Same,Same
+35,"Kyrgyzstan, Kazakhstan, Tajikistan",High Corruption,Unstable,Unstable,1,High Corruption,Same,Same
+36,"Kyrgyzstan, Kazakhstan, Tajikistan, Uzbekistan, Turkmenistan",High Corruption,Unstable,Unstable,1,High Corruption,Same,Same
+37,Laos,High Corruption,Unstable,Unstable,1,High Corruption,Same,Same
+38,Lebanon,High Corruption,Very Unstable,Very Unstable,7,High Corruption,Same,Same
+39,Liberia,High Corruption,Very Unstable,Very Unstable,3,High Corruption,Same,Same
+40,Libya,Very High Corruption,Very Unstable,Very Unstable,1,Very High Corruption,Same,Same
+41,Macedonia,High Corruption,Unstable,Unstable,7,High Corruption,Same,Same
+42,Madagascar,High Corruption,Unstable,Unstable,1,High Corruption,Same,Same
+43,Malawi,High Corruption,Unstable,Unstable,1,High Corruption,Same,Same
+44,Mali,High Corruption,Unstable,Unstable,1,High Corruption,Same,Same
+45,Mexico,High Corruption,Unstable,Unstable,2,High Corruption,Same,Same
+46,Moldova,High Corruption,Unstable,Unstable,7,High Corruption,Same,Same
+47,Mongolia,High Corruption,Unstable,Unstable,8,High Corruption,Same,Same
+48,Montenegro,High Corruption,Unstable,Unstable,3,High Corruption,Same,Same
+49,Morocco,High Corruption,Unstable,Unstable,6,High Corruption,Same,Same
+50,Mozambique,High Corruption,Unstable,Unstable,1,High Corruption,Same,Same
+51,Multiple,High Corruption,Unstable,Unstable,4,High Corruption,Same,Same
+52,Nepal,High Corruption,Very Unstable,Very Unstable,3,High Corruption,Same,Same
+53,Nicaragua,High Corruption,Unstable,Unstable,5,High Corruption,Same,Same
+54,Nigeria,High Corruption,Very Unstable,Very Unstable,4,High Corruption,Same,Same
+55,Pakistan,High Corruption,Very Unstable,Very Unstable,5,High Corruption,Same,Same
+56,Panama,High Corruption,Unstable,Unstable,1,High Corruption,Same,Same
+57,Paraguay,High Corruption,Unstable,Unstable,4,High Corruption,Same,Same
+58,Peru,High Corruption,Unstable,Unstable,5,High Corruption,Same,Same
+59,Philippines,High Corruption,Unstable,Very Unstable,12,High Corruption,Worse,Same
+60,Russia,High Corruption,Unstable,Unstable,5,High Corruption,Same,Same
+61,Rwanda,High Corruption,Unstable,Unstable,1,High Corruption,Same,Same
+62,SENEGAL,High Corruption,Unstable,Unstable,1,High Corruption,Same,Same
+63,Serbia,High Corruption,Unstable,Unstable,5,High Corruption,Same,Same
+64,Sierra Leone,High Corruption,Unstable,Unstable,2,High Corruption,Same,Same
+65,Sri Lanka,High Corruption,Unstable,Unstable,3,High Corruption,Same,Same
+66,Thailand,High Corruption,Very Unstable,Very Unstable,1,High Corruption,Same,Same
+67,Turkmenistan,Very High Corruption,Unstable,Unstable,1,Very High Corruption,Same,Same
+68,Uganda,High Corruption,Unstable,Unstable,2,High Corruption,Same,Same
+69,Ukraine,High Corruption,Unstable,Unstable,8,High Corruption,Same,Same
+70,Vietnam,High Corruption,Unstable,Unstable,2,High Corruption,Same,Same
+71,West Bank and Gaza,High Corruption,Very Unstable,Very Unstable,10,High Corruption,Same,Same
+72,Yemen,High Corruption,Very Unstable,Very Unstable,3,High Corruption,Same,Same
+73,Zambia,High Corruption,Unstable,Unstable,2,High Corruption,Same,Same
