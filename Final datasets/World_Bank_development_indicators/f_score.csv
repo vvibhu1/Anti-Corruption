@@ -1,0 +1,66 @@
+,Indicators,F_score,Percentile_rank
+0,Merchandise Exports To High-Income Economies (% Of Total Merchandise Exports),183,0.4307692307692308
+1,Merchandise Imports From Low- And Middle-Income Economies Outside Region (% Of Total Merchandise Imports),230,0.676923076923077
+2,Merchandise Imports From High-Income Economies (% Of Total Merchandise Imports),195,0.5538461538461539
+3,"Inflation, Consumer Prices (Annual %)",317,0.8615384615384616
+4,Gross Savings (% Of Gdp),252,0.7538461538461538
+5,Refugee Population By Country Or Territory Of Origin,193,0.5153846153846153
+6,Prevalence Of Undernourishment (% Of Population),137,0.24615384615384617
+7,"Inflation, Gdp Deflator: Linked Series (Annual %)",359,0.9461538461538461
+8,Domestic Private Health Expenditure (% Of Current Health Expenditure),239,0.7076923076923077
+9,Population Growth (Annual %),140,0.27692307692307694
+10,Imports Of Goods And Services (% Of Gdp),159,0.35384615384615387
+11,Total Reserves (% Of Total External Debt),262,0.7692307692307693
+12,"Foreign Direct Investment, Net Inflows (% Of Gdp)",359,0.9461538461538461
+13,"Industry (Including Construction), Value Added (% Of Gdp)",208,0.5769230769230769
+14,"Wage And Salaried Workers, Total (% Of Total Employment) (Modeled Ilo Estimate)",122,0.18461538461538463
+15,Merchandise Exports To Low- And Middle-Income Economies Outside Region (% Of Total Merchandise Exports),241,0.7230769230769231
+16,Claims On Central Government (Annual Growth As % Of Broad Money),402,0.9846153846153847
+17,Domestic Credit To Private Sector (% Of Gdp),156,0.3384615384615385
+18,Food Production Index (2004-2006 = 100),328,0.8769230769230769
+19,"Access To Electricity, Rural (% Of Rural Population)",133,0.23076923076923078
+20,Merchandise Imports From Low- And Middle-Income Economies Within Region (% Of Total Merchandise Imports),188,0.46153846153846156
+21,Merchandise Exports To Low- And Middle-Income Economies Within Region (% Of Total Merchandise Exports),244,0.7384615384615385
+22,Gni Growth (Annual %),425,1.0
+23,Trade In Services (% Of Gdp),224,0.6384615384615384
+24,Claims On Private Sector (Annual Growth As % Of Broad Money),365,0.9692307692307692
+25,Access To Clean Fuels And Technologies For Cooking (% Of Population),106,0.15384615384615385
+26,Bank Liquid Reserves To Bank Assets Ratio (%),278,0.7846153846153846
+27,General Government Final Consumption Expenditure (% Of Gdp),238,0.6923076923076923
+28,"Mortality Rate, Under-5 (Per 1,000 Live Births)",97,0.12307692307692308
+29,Price Level Ratio Of Ppp Conversion Factor (Gdp) To Market Exchange Rate,299,0.8153846153846154
+30,Agricultural Land (% Of Land Area),194,0.5384615384615384
+31,Population Ages 0-14 (% Of Total Population),138,0.26153846153846155
+32,"Adolescent Fertility Rate (Births Per 1,000 Women Ages 15-19)",165,0.38461538461538464
+33,"Unemployment, Total (% Of Total Labor Force) (Modeled Ilo Estimate)",226,0.6615384615384615
+34,Lending Interest Rate (%),224,0.6384615384615384
+35,"Intentional Homicides (Per 100,000 People)",339,0.8923076923076924
+36,Gdp Per Person Employed (Constant 2017 Ppp $),71,0.07692307692307693
+37,"People Using At Least Basic Sanitation Services, Rural (% Of Rural Population)",96,0.1076923076923077
+38,Trade (% Of Gdp),132,0.2153846153846154
+39,Urban Population (% Of Total Population),121,0.16923076923076924
+40,Net Barter Terms Of Trade Index (2000 = 100),308,0.8461538461538461
+41,"People Using At Least Basic Drinking Water Services, Rural (% Of Rural Population)",145,0.3
+42,Import Value Index (2000 = 100),220,0.6153846153846154
+43,Public Credit Registry Coverage (% Of Adults),102,0.13846153846153847
+44,Merchandise Trade (% Of Gdp),188,0.46153846153846156
+45,Export Value Index (2000 = 100),193,0.5153846153846153
+46,Broad Money (% Of Gdp),125,0.2
+47,Broad Money Growth (Annual %),357,0.9230769230769231
+48,Total Tax And Contribution Rate (% Of Profit),287,0.8
+49,Deposit Interest Rate (%),216,0.6
+50,Domestic General Government Health Expenditure (% Of Gdp),188,0.46153846153846156
+51,Lifetime Risk Of Maternal Death (%),65,0.06153846153846154
+52,Import Volume Index (2000 = 100),192,0.49230769230769234
+53,"Foreign Direct Investment, Net Outflows (% Of Gdp)",353,0.9076923076923077
+54,Net Primary Income (Net Income From Abroad) (Current Us$),170,0.4076923076923077
+55,Exports Of Goods And Services (% Of Gdp),303,0.8307692307692308
+56,Military Expenditure (% Of General Government Expenditure),208,0.5769230769230769
+57,"Mortality Rate, Neonatal (Per 1,000 Live Births)",94,0.09230769230769231
+58,Private Credit Bureau Coverage (% Of Adults),145,0.3
+59,Gross Domestic Savings (% Of Gdp),163,0.36923076923076925
+60,Military Expenditure (% Of Gdp),170,0.4076923076923077
+61,"Labor Force Participation Rate, Total (% Of Total Population Ages 15-64) (Modeled Ilo Estimate)",150,0.3230769230769231
+62,region_USAID_Latin America and Caribbean (LAC),1,0.023076923076923078
+63,IncomeGroup,2,0.046153846153846156
+64,region_USAID_South and Central Asia (SCA),1,0.023076923076923078
