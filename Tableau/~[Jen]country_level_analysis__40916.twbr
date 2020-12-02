@@ -1,0 +1,1372 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20203.20.1018.2303                               -->
+<workbook source-build='2020.3.2 (20203.20.1018.2303)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='selected30percentile_indicators' inline='true' name='federated.1tsly3o1fc4b3q17gxnmm0yhqy4e' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='wdi_country_top30' name='textscan.14crnnd0fatzvh13867na0dmjf5e'>
+            <connection class='textscan' cleaning='yes' compat='no' csvFile='C:/Users/thuyt/Documents/GitHub/Anti-Corruption/Final datasets/World_Bank_development_indicators/COUNTRY LEVEL/wdi_country_top30.csv' dataRefreshTime='' directory='C:/Users/thuyt/Documents/GitHub/Anti-Corruption/Final datasets/World_Bank_development_indicators/COUNTRY LEVEL' filename='C:/Users/thuyt/AppData/Local/Temp/TableauTemp/0pxon3b1uexzch1c04mrn0dzbdsi/wdi_country_top30.csv.xlsx' interpretationMode='8' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.14crnnd0fatzvh13867na0dmjf5e' name='wdi_country_top30.csv' table='[C:\Users\thuyt\Documents\GitHub\Anti-Corruption\Final datasets\World_Bank_development_indicators\COUNTRY LEVEL\wdi_country_top30#csv]' type='table'>
+          <columns character-set='UTF-8' gridOrigin='A1:AC1068:no:A1:AC1068:2' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='string' name='Country Code' ordinal='1' />
+            <column datatype='integer' name='Year' ordinal='2' />
+            <column datatype='string' name='Country Name' ordinal='3' />
+            <column datatype='real' name='Corruption Perception Index' ordinal='4' />
+            <column datatype='string' name='IncomeGroup' ordinal='5' />
+            <column datatype='string' name='region_USAID' ordinal='6' />
+            <column datatype='string' name='region_WorldBank' ordinal='7' />
+            <column datatype='real' name='Gni Growth (Annual %)' ordinal='8' />
+            <column datatype='real' name='Claims On Central Government (Annual Growth As % Of Broad Money)' ordinal='9' />
+            <column datatype='real' name='Claims On Private Sector (Annual Growth As % Of Broad Money)' ordinal='10' />
+            <column datatype='real' name='Inflation, Gdp Deflator: Linked Series (Annual %)' ordinal='11' />
+            <column datatype='real' name='Foreign Direct Investment, Net Inflows (% Of Gdp)' ordinal='12' />
+            <column datatype='real' name='Broad Money Growth (Annual %)' ordinal='13' />
+            <column datatype='real' name='Foreign Direct Investment, Net Outflows (% Of Gdp)' ordinal='14' />
+            <column datatype='real' name='Intentional Homicides (Per 100,000 People)' ordinal='15' />
+            <column datatype='real' name='Food Production Index (2004-2006 = 100)' ordinal='16' />
+            <column datatype='real' name='Inflation, Consumer Prices (Annual %)' ordinal='17' />
+            <column datatype='real' name='Net Barter Terms Of Trade Index (2000 = 100)' ordinal='18' />
+            <column datatype='real' name='Exports Of Goods And Services (% Of Gdp)' ordinal='19' />
+            <column datatype='real' name='Price Level Ratio Of Ppp Conversion Factor (Gdp) To Market Exchange Rate' ordinal='20' />
+            <column datatype='real' name='Total Tax And Contribution Rate (% Of Profit)' ordinal='21' />
+            <column datatype='real' name='Bank Liquid Reserves To Bank Assets Ratio (%)' ordinal='22' />
+            <column datatype='real' name='Total Reserves (% Of Total External Debt)' ordinal='23' />
+            <column datatype='real' name='Gross Savings (% Of Gdp)' ordinal='24' />
+            <column datatype='real' name='Merchandise Exports To Low- And Middle-Income Economies Within Region (% Of Total Merchandise Exports)' ordinal='25' />
+            <column datatype='real' name='Merchandise Exports To Low- And Middle-Income Economies Outside Region (% Of Total Merchandise Exports)' ordinal='26' />
+            <column datatype='real' name='Domestic Private Health Expenditure (% Of Current Health Expenditure)' ordinal='27' />
+            <column datatype='real' name='Agg_Index' ordinal='28' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.14crnnd0fatzvh13867na0dmjf5e' name='wdi_country_top30.csv' table='[C:\Users\thuyt\Documents\GitHub\Anti-Corruption\Final datasets\World_Bank_development_indicators\COUNTRY LEVEL\wdi_country_top30#csv]' type='table'>
+          <columns character-set='UTF-8' gridOrigin='A1:AC1068:no:A1:AC1068:2' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='string' name='Country Code' ordinal='1' />
+            <column datatype='integer' name='Year' ordinal='2' />
+            <column datatype='string' name='Country Name' ordinal='3' />
+            <column datatype='real' name='Corruption Perception Index' ordinal='4' />
+            <column datatype='string' name='IncomeGroup' ordinal='5' />
+            <column datatype='string' name='region_USAID' ordinal='6' />
+            <column datatype='string' name='region_WorldBank' ordinal='7' />
+            <column datatype='real' name='Gni Growth (Annual %)' ordinal='8' />
+            <column datatype='real' name='Claims On Central Government (Annual Growth As % Of Broad Money)' ordinal='9' />
+            <column datatype='real' name='Claims On Private Sector (Annual Growth As % Of Broad Money)' ordinal='10' />
+            <column datatype='real' name='Inflation, Gdp Deflator: Linked Series (Annual %)' ordinal='11' />
+            <column datatype='real' name='Foreign Direct Investment, Net Inflows (% Of Gdp)' ordinal='12' />
+            <column datatype='real' name='Broad Money Growth (Annual %)' ordinal='13' />
+            <column datatype='real' name='Foreign Direct Investment, Net Outflows (% Of Gdp)' ordinal='14' />
+            <column datatype='real' name='Intentional Homicides (Per 100,000 People)' ordinal='15' />
+            <column datatype='real' name='Food Production Index (2004-2006 = 100)' ordinal='16' />
+            <column datatype='real' name='Inflation, Consumer Prices (Annual %)' ordinal='17' />
+            <column datatype='real' name='Net Barter Terms Of Trade Index (2000 = 100)' ordinal='18' />
+            <column datatype='real' name='Exports Of Goods And Services (% Of Gdp)' ordinal='19' />
+            <column datatype='real' name='Price Level Ratio Of Ppp Conversion Factor (Gdp) To Market Exchange Rate' ordinal='20' />
+            <column datatype='real' name='Total Tax And Contribution Rate (% Of Profit)' ordinal='21' />
+            <column datatype='real' name='Bank Liquid Reserves To Bank Assets Ratio (%)' ordinal='22' />
+            <column datatype='real' name='Total Reserves (% Of Total External Debt)' ordinal='23' />
+            <column datatype='real' name='Gross Savings (% Of Gdp)' ordinal='24' />
+            <column datatype='real' name='Merchandise Exports To Low- And Middle-Income Economies Within Region (% Of Total Merchandise Exports)' ordinal='25' />
+            <column datatype='real' name='Merchandise Exports To Low- And Middle-Income Economies Outside Region (% Of Total Merchandise Exports)' ordinal='26' />
+            <column datatype='real' name='Domestic Private Health Expenditure (% Of Current Health Expenditure)' ordinal='27' />
+            <column datatype='real' name='Agg_Index' ordinal='28' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[wdi_country_top30.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:AC1068:no:A1:AC1068:2&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[wdi_country_top30.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[wdi_country_top30.csv_CF1494AA115847DCA2231967D2FD3397]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Country Code</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Country Code]</local-name>
+            <parent-name>[wdi_country_top30.csv]</parent-name>
+            <remote-alias>Country Code</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[wdi_country_top30.csv_CF1494AA115847DCA2231967D2FD3397]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Year]</local-name>
+            <parent-name>[wdi_country_top30.csv]</parent-name>
+            <remote-alias>Year</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[wdi_country_top30.csv_CF1494AA115847DCA2231967D2FD3397]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Country Name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Country Name]</local-name>
+            <parent-name>[wdi_country_top30.csv]</parent-name>
+            <remote-alias>Country Name</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[wdi_country_top30.csv_CF1494AA115847DCA2231967D2FD3397]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Corruption Perception Index</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Corruption Perception Index]</local-name>
+            <parent-name>[wdi_country_top30.csv]</parent-name>
+            <remote-alias>Corruption Perception Index</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[wdi_country_top30.csv_CF1494AA115847DCA2231967D2FD3397]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>IncomeGroup</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[IncomeGroup]</local-name>
+            <parent-name>[wdi_country_top30.csv]</parent-name>
+            <remote-alias>IncomeGroup</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[wdi_country_top30.csv_CF1494AA115847DCA2231967D2FD3397]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>region_USAID</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[region_USAID]</local-name>
+            <parent-name>[wdi_country_top30.csv]</parent-name>
+            <remote-alias>region_USAID</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[wdi_country_top30.csv_CF1494AA115847DCA2231967D2FD3397]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>region_WorldBank</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[region_WorldBank]</local-name>
+            <parent-name>[wdi_country_top30.csv]</parent-name>
+            <remote-alias>region_WorldBank</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[wdi_country_top30.csv_CF1494AA115847DCA2231967D2FD3397]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Gni Growth (Annual %)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Gni Growth (Annual %)]</local-name>
+            <parent-name>[wdi_country_top30.csv]</parent-name>
+            <remote-alias>Gni Growth (Annual %)</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[wdi_country_top30.csv_CF1494AA115847DCA2231967D2FD3397]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Claims On Central Government (Annual Growth As % Of Broad Money)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Claims On Central Government (Annual Growth As % Of Broad Money)]</local-name>
+            <parent-name>[wdi_country_top30.csv]</parent-name>
+            <remote-alias>Claims On Central Government (Annual Growth As % Of Broad Money)</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[wdi_country_top30.csv_CF1494AA115847DCA2231967D2FD3397]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Claims On Private Sector (Annual Growth As % Of Broad Money)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Claims On Private Sector (Annual Growth As % Of Broad Money)]</local-name>
+            <parent-name>[wdi_country_top30.csv]</parent-name>
+            <remote-alias>Claims On Private Sector (Annual Growth As % Of Broad Money)</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[wdi_country_top30.csv_CF1494AA115847DCA2231967D2FD3397]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Inflation, Gdp Deflator: Linked Series (Annual %)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Inflation, Gdp Deflator: Linked Series (Annual %)]</local-name>
+            <parent-name>[wdi_country_top30.csv]</parent-name>
+            <remote-alias>Inflation, Gdp Deflator: Linked Series (Annual %)</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[wdi_country_top30.csv_CF1494AA115847DCA2231967D2FD3397]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Foreign Direct Investment, Net Inflows (% Of Gdp)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Foreign Direct Investment, Net Inflows (% Of Gdp)]</local-name>
+            <parent-name>[wdi_country_top30.csv]</parent-name>
+            <remote-alias>Foreign Direct Investment, Net Inflows (% Of Gdp)</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[wdi_country_top30.csv_CF1494AA115847DCA2231967D2FD3397]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Broad Money Growth (Annual %)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Broad Money Growth (Annual %)]</local-name>
+            <parent-name>[wdi_country_top30.csv]</parent-name>
+            <remote-alias>Broad Money Growth (Annual %)</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[wdi_country_top30.csv_CF1494AA115847DCA2231967D2FD3397]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Foreign Direct Investment, Net Outflows (% Of Gdp)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Foreign Direct Investment, Net Outflows (% Of Gdp)]</local-name>
+            <parent-name>[wdi_country_top30.csv]</parent-name>
+            <remote-alias>Foreign Direct Investment, Net Outflows (% Of Gdp)</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[wdi_country_top30.csv_CF1494AA115847DCA2231967D2FD3397]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Intentional Homicides (Per 100,000 People)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Intentional Homicides (Per 100,000 People)]</local-name>
+            <parent-name>[wdi_country_top30.csv]</parent-name>
+            <remote-alias>Intentional Homicides (Per 100,000 People)</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[wdi_country_top30.csv_CF1494AA115847DCA2231967D2FD3397]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Food Production Index (2004-2006 = 100)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Food Production Index (2004-2006 = 100)]</local-name>
+            <parent-name>[wdi_country_top30.csv]</parent-name>
+            <remote-alias>Food Production Index (2004-2006 = 100)</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[wdi_country_top30.csv_CF1494AA115847DCA2231967D2FD3397]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Inflation, Consumer Prices (Annual %)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Inflation, Consumer Prices (Annual %)]</local-name>
+            <parent-name>[wdi_country_top30.csv]</parent-name>
+            <remote-alias>Inflation, Consumer Prices (Annual %)</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[wdi_country_top30.csv_CF1494AA115847DCA2231967D2FD3397]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Net Barter Terms Of Trade Index (2000 = 100)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Net Barter Terms Of Trade Index (2000 = 100)]</local-name>
+            <parent-name>[wdi_country_top30.csv]</parent-name>
+            <remote-alias>Net Barter Terms Of Trade Index (2000 = 100)</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[wdi_country_top30.csv_CF1494AA115847DCA2231967D2FD3397]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Exports Of Goods And Services (% Of Gdp)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Exports Of Goods And Services (% Of Gdp)]</local-name>
+            <parent-name>[wdi_country_top30.csv]</parent-name>
+            <remote-alias>Exports Of Goods And Services (% Of Gdp)</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[wdi_country_top30.csv_CF1494AA115847DCA2231967D2FD3397]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Price Level Ratio Of Ppp Conversion Factor (Gdp) To Market Exchange Rate</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Price Level Ratio Of Ppp Conversion Factor (Gdp) To Market Exchange Rate]</local-name>
+            <parent-name>[wdi_country_top30.csv]</parent-name>
+            <remote-alias>Price Level Ratio Of Ppp Conversion Factor (Gdp) To Market Exchange Rate</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[wdi_country_top30.csv_CF1494AA115847DCA2231967D2FD3397]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total Tax And Contribution Rate (% Of Profit)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Total Tax And Contribution Rate (% Of Profit)]</local-name>
+            <parent-name>[wdi_country_top30.csv]</parent-name>
+            <remote-alias>Total Tax And Contribution Rate (% Of Profit)</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[wdi_country_top30.csv_CF1494AA115847DCA2231967D2FD3397]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Bank Liquid Reserves To Bank Assets Ratio (%)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Bank Liquid Reserves To Bank Assets Ratio (%)]</local-name>
+            <parent-name>[wdi_country_top30.csv]</parent-name>
+            <remote-alias>Bank Liquid Reserves To Bank Assets Ratio (%)</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[wdi_country_top30.csv_CF1494AA115847DCA2231967D2FD3397]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total Reserves (% Of Total External Debt)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Total Reserves (% Of Total External Debt)]</local-name>
+            <parent-name>[wdi_country_top30.csv]</parent-name>
+            <remote-alias>Total Reserves (% Of Total External Debt)</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[wdi_country_top30.csv_CF1494AA115847DCA2231967D2FD3397]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Gross Savings (% Of Gdp)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Gross Savings (% Of Gdp)]</local-name>
+            <parent-name>[wdi_country_top30.csv]</parent-name>
+            <remote-alias>Gross Savings (% Of Gdp)</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[wdi_country_top30.csv_CF1494AA115847DCA2231967D2FD3397]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Merchandise Exports To Low- And Middle-Income Economies Within Region (% Of Total Merchandise Exports)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Merchandise Exports To Low- And Middle-Income Economies Within Region (% Of Total Merchandise Exports)]</local-name>
+            <parent-name>[wdi_country_top30.csv]</parent-name>
+            <remote-alias>Merchandise Exports To Low- And Middle-Income Economies Within Region (% Of Total Merchandise Exports)</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[wdi_country_top30.csv_CF1494AA115847DCA2231967D2FD3397]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Merchandise Exports To Low- And Middle-Income Economies Outside Region (% Of Total Merchandise Exports)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Merchandise Exports To Low- And Middle-Income Economies Outside Region (% Of Total Merchandise Exports)]</local-name>
+            <parent-name>[wdi_country_top30.csv]</parent-name>
+            <remote-alias>Merchandise Exports To Low- And Middle-Income Economies Outside Region (% Of Total Merchandise Exports)</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[wdi_country_top30.csv_CF1494AA115847DCA2231967D2FD3397]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Domestic Private Health Expenditure (% Of Current Health Expenditure)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Domestic Private Health Expenditure (% Of Current Health Expenditure)]</local-name>
+            <parent-name>[wdi_country_top30.csv]</parent-name>
+            <remote-alias>Domestic Private Health Expenditure (% Of Current Health Expenditure)</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[wdi_country_top30.csv_CF1494AA115847DCA2231967D2FD3397]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Agg_Index</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Agg_Index]</local-name>
+            <parent-name>[wdi_country_top30.csv]</parent-name>
+            <remote-alias>Agg_Index</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[wdi_country_top30.csv_CF1494AA115847DCA2231967D2FD3397]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' name='[Country Code]' role='dimension' semantic-role='[Country].[Name]' type='nominal' />
+      <column datatype='string' name='[Country Name]' role='dimension' semantic-role='[Country].[Name]' type='nominal' />
+      <column datatype='integer' hidden='true' name='[F1]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='wdi_country_top30.csv' datatype='table' name='[__tableau_internal_object_id__].[wdi_country_top30.csv_CF1494AA115847DCA2231967D2FD3397]' role='measure' type='quantitative' />
+      <column datatype='string' name='[region_USAID]' role='dimension' semantic-role='[Country].[Name]' type='nominal' />
+      <column datatype='string' name='[region_WorldBank]' role='dimension' semantic-role='[Country].[Name]' type='nominal' />
+      <column-instance column='[Country Name]' derivation='None' name='[none:Country Name:nk]' pivot='key' type='nominal' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Country Name:nk]' palette='tableau20_10_0' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;Iraq&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Moldova&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Mozambique&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;West Bank and Gaza&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Afghanistan&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Albania&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;East Timor&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Madagascar&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Bulgaria&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Guyana&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Turkmenistan&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Democratic Republic of Congo&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Kenya&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Pakistan&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Ukraine&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Burundi&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Jamaica&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Montenegro&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Nepal&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Yemen&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Bangladesh&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Georgia&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Haiti&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Mongolia&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Uganda&quot;</bucket>
+            </map>
+            <map to='#9c755f'>
+              <bucket>&quot;Thailand&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;El Salvador&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Libya&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Rwanda&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Armenia&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Ghana&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Malawi&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Sierra Leone&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Ecuador&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Lebanon&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Philippines&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Bolivia&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Honduras&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Kosovo&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Djibouti&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Panama&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Vietnam&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Dominican Republic&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Kyrgyzstan&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Paraguay&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Egypt&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Liberia&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Ethiopia&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;SENEGAL&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Cambodia&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Jordan&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Nicaragua&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Russian&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Zambia&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Indonesia&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Macedonia&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Morocco&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Angola&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Azerbaijan&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Guatemala&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Mali&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Sri Lanka&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Laos&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Peru&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Colombia&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Kazakhstan&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Nigeria&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Serbia&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Bosnia and Herzegovina&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Guinea&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Mexico&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='wdi_country_top30.csv' id='wdi_country_top30.csv_CF1494AA115847DCA2231967D2FD3397'>
+            <properties context=''>
+              <relation connection='textscan.14crnnd0fatzvh13867na0dmjf5e' name='wdi_country_top30.csv' table='[C:\Users\thuyt\Documents\GitHub\Anti-Corruption\Final datasets\World_Bank_development_indicators\COUNTRY LEVEL\wdi_country_top30#csv]' type='table'>
+                <columns character-set='UTF-8' gridOrigin='A1:AC1068:no:A1:AC1068:2' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='F1' ordinal='0' />
+                  <column datatype='string' name='Country Code' ordinal='1' />
+                  <column datatype='integer' name='Year' ordinal='2' />
+                  <column datatype='string' name='Country Name' ordinal='3' />
+                  <column datatype='real' name='Corruption Perception Index' ordinal='4' />
+                  <column datatype='string' name='IncomeGroup' ordinal='5' />
+                  <column datatype='string' name='region_USAID' ordinal='6' />
+                  <column datatype='string' name='region_WorldBank' ordinal='7' />
+                  <column datatype='real' name='Gni Growth (Annual %)' ordinal='8' />
+                  <column datatype='real' name='Claims On Central Government (Annual Growth As % Of Broad Money)' ordinal='9' />
+                  <column datatype='real' name='Claims On Private Sector (Annual Growth As % Of Broad Money)' ordinal='10' />
+                  <column datatype='real' name='Inflation, Gdp Deflator: Linked Series (Annual %)' ordinal='11' />
+                  <column datatype='real' name='Foreign Direct Investment, Net Inflows (% Of Gdp)' ordinal='12' />
+                  <column datatype='real' name='Broad Money Growth (Annual %)' ordinal='13' />
+                  <column datatype='real' name='Foreign Direct Investment, Net Outflows (% Of Gdp)' ordinal='14' />
+                  <column datatype='real' name='Intentional Homicides (Per 100,000 People)' ordinal='15' />
+                  <column datatype='real' name='Food Production Index (2004-2006 = 100)' ordinal='16' />
+                  <column datatype='real' name='Inflation, Consumer Prices (Annual %)' ordinal='17' />
+                  <column datatype='real' name='Net Barter Terms Of Trade Index (2000 = 100)' ordinal='18' />
+                  <column datatype='real' name='Exports Of Goods And Services (% Of Gdp)' ordinal='19' />
+                  <column datatype='real' name='Price Level Ratio Of Ppp Conversion Factor (Gdp) To Market Exchange Rate' ordinal='20' />
+                  <column datatype='real' name='Total Tax And Contribution Rate (% Of Profit)' ordinal='21' />
+                  <column datatype='real' name='Bank Liquid Reserves To Bank Assets Ratio (%)' ordinal='22' />
+                  <column datatype='real' name='Total Reserves (% Of Total External Debt)' ordinal='23' />
+                  <column datatype='real' name='Gross Savings (% Of Gdp)' ordinal='24' />
+                  <column datatype='real' name='Merchandise Exports To Low- And Middle-Income Economies Within Region (% Of Total Merchandise Exports)' ordinal='25' />
+                  <column datatype='real' name='Merchandise Exports To Low- And Middle-Income Economies Outside Region (% Of Total Merchandise Exports)' ordinal='26' />
+                  <column datatype='real' name='Domestic Private Health Expenditure (% Of Current Health Expenditure)' ordinal='27' />
+                  <column datatype='real' name='Agg_Index' ordinal='28' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Claims_Central_Gov'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>CLAIMS ON CENTRAL GOVERNMENT (ANNUAL GROWTH AS % OF BROAD MONEY)</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='selected30percentile_indicators' name='federated.1tsly3o1fc4b3q17gxnmm0yhqy4e' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1tsly3o1fc4b3q17gxnmm0yhqy4e'>
+            <column datatype='real' name='[Claims On Central Government (Annual Growth As % Of Broad Money)]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Country Name]' role='dimension' semantic-role='[Country].[Name]' type='nominal' />
+            <column datatype='integer' name='[Year]' role='measure' type='quantitative' />
+            <column-instance column='[Country Name]' derivation='None' name='[none:Country Name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[region_USAID]' derivation='None' name='[none:region_USAID:nk]' pivot='key' type='nominal' />
+            <column datatype='string' name='[region_USAID]' role='dimension' semantic-role='[Country].[Name]' type='nominal' />
+            <column-instance column='[Claims On Central Government (Annual Growth As % Of Broad Money)]' derivation='Sum' name='[sum:Claims On Central Government (Annual Growth As % Of Broad Money):qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1tsly3o1fc4b3q17gxnmm0yhqy4e].[none:Country Name:nk]'>
+            <groupfilter function='level-members' level='[none:Country Name:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1tsly3o1fc4b3q17gxnmm0yhqy4e].[none:region_USAID:nk]'>
+            <groupfilter function='member' level='[none:region_USAID:nk]' member='&quot;Sub-Saharan Africa (SSA)&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1tsly3o1fc4b3q17gxnmm0yhqy4e].[none:Country Name:nk]</column>
+            <column>[federated.1tsly3o1fc4b3q17gxnmm0yhqy4e].[none:region_USAID:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='refline'>
+            <format attr='fill-above' id='refline5' value='#00000000' />
+            <format attr='fill-below' id='refline5' value='#00000000' />
+          </style-rule>
+          <style-rule element='refband'>
+            <format attr='fill-color' id='refline2' value='#f0f1e8' />
+            <format attr='fill-color' id='refline6' value='#eff3e3' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='6' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1tsly3o1fc4b3q17gxnmm0yhqy4e].[none:Country Name:nk]' />
+            </encodings>
+            <reference-line axis-column='[federated.1tsly3o1fc4b3q17gxnmm0yhqy4e].[sum:Claims On Central Government (Annual Growth As % Of Broad Money):qk]' enable-instant-analytics='true' fill-above='false' fill-below='false' formula='confidence' id='refline14' label-type='none' paired-distribution-id='refline15' probability='95' scope='per-table' show-lines='both' symmetric='false' value-column='[federated.1tsly3o1fc4b3q17gxnmm0yhqy4e].[sum:Claims On Central Government (Annual Growth As % Of Broad Money):qk]' z-order='4' />
+            <reference-line axis-column='[federated.1tsly3o1fc4b3q17gxnmm0yhqy4e].[sum:Claims On Central Government (Annual Growth As % Of Broad Money):qk]' enable-instant-analytics='true' formula='average' id='refline15' label-type='automatic' paired-distribution-id='refline14' probability='95' scope='per-table' value-column='[federated.1tsly3o1fc4b3q17gxnmm0yhqy4e].[sum:Claims On Central Government (Annual Growth As % Of Broad Money):qk]' z-order='5' />
+            <reference-line axis-column='[federated.1tsly3o1fc4b3q17gxnmm0yhqy4e].[sum:Claims On Central Government (Annual Growth As % Of Broad Money):qk]' enable-instant-analytics='true' formula='constant' id='refline16' label-type='automatic' scope='per-table' value='0.20000000000000001' value-column='[federated.1tsly3o1fc4b3q17gxnmm0yhqy4e].[sum:Claims On Central Government (Annual Growth As % Of Broad Money):qk]' z-order='6' />
+            <reference-line axis-column='[federated.1tsly3o1fc4b3q17gxnmm0yhqy4e].[none:Year:qk]' enable-instant-analytics='true' formula='min' id='refline5' label-type='automatic' scope='per-table' value-column='[federated.1tsly3o1fc4b3q17gxnmm0yhqy4e].[none:Year:qk]' z-order='1' />
+            <reference-line axis-column='[federated.1tsly3o1fc4b3q17gxnmm0yhqy4e].[none:Year:qk]' enable-instant-analytics='true' formula='constant' id='refline6' label-type='none' paired-id='refline7' scope='per-table' symmetric='false' value='2005' value-column='[federated.1tsly3o1fc4b3q17gxnmm0yhqy4e].[none:Year:qk]' z-order='2' />
+            <reference-line axis-column='[federated.1tsly3o1fc4b3q17gxnmm0yhqy4e].[none:Year:qk]' enable-instant-analytics='true' formula='constant' id='refline7' label-type='none' paired-id='refline6' scope='per-table' symmetric='false' value='2017' value-column='[federated.1tsly3o1fc4b3q17gxnmm0yhqy4e].[none:Year:qk]' z-order='3' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1tsly3o1fc4b3q17gxnmm0yhqy4e].[sum:Claims On Central Government (Annual Growth As % Of Broad Money):qk]</rows>
+        <cols>[federated.1tsly3o1fc4b3q17gxnmm0yhqy4e].[none:Year:qk]</cols>
+      </table>
+      <simple-id uuid='{B96FE63D-9FD5-4F53-8A3B-F958AEC445E3}' />
+    </worksheet>
+    <worksheet name='FDI_Net_Inflows'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>FOREIGN DIRECT INVESTMENTS, NET INFLOWS (% OF GDP)</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='selected30percentile_indicators' name='federated.1tsly3o1fc4b3q17gxnmm0yhqy4e' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1tsly3o1fc4b3q17gxnmm0yhqy4e'>
+            <column datatype='string' name='[Country Name]' role='dimension' semantic-role='[Country].[Name]' type='nominal' />
+            <column datatype='real' name='[Foreign Direct Investment, Net Inflows (% Of Gdp)]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Year]' role='measure' type='quantitative' />
+            <column-instance column='[Country Name]' derivation='None' name='[none:Country Name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[region_USAID]' derivation='None' name='[none:region_USAID:nk]' pivot='key' type='nominal' />
+            <column datatype='string' name='[region_USAID]' role='dimension' semantic-role='[Country].[Name]' type='nominal' />
+            <column-instance column='[Foreign Direct Investment, Net Inflows (% Of Gdp)]' derivation='Sum' name='[sum:Foreign Direct Investment, Net Inflows (% Of Gdp):qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1tsly3o1fc4b3q17gxnmm0yhqy4e].[none:Country Name:nk]'>
+            <groupfilter function='level-members' level='[none:Country Name:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1tsly3o1fc4b3q17gxnmm0yhqy4e].[none:region_USAID:nk]'>
+            <groupfilter function='member' level='[none:region_USAID:nk]' member='&quot;Sub-Saharan Africa (SSA)&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1tsly3o1fc4b3q17gxnmm0yhqy4e].[none:Country Name:nk]</column>
+            <column>[federated.1tsly3o1fc4b3q17gxnmm0yhqy4e].[none:region_USAID:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='refline'>
+            <format attr='fill-above' id='refline5' value='#00000000' />
+            <format attr='fill-below' id='refline5' value='#00000000' />
+          </style-rule>
+          <style-rule element='refband'>
+            <format attr='fill-color' id='refline2' value='#f0f1e8' />
+            <format attr='fill-color' id='refline6' value='#eff3e3' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='8' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1tsly3o1fc4b3q17gxnmm0yhqy4e].[none:Country Name:nk]' />
+            </encodings>
+            <reference-line axis-column='[federated.1tsly3o1fc4b3q17gxnmm0yhqy4e].[sum:Foreign Direct Investment, Net Inflows (% Of Gdp):qk]' enable-instant-analytics='true' fill-above='false' fill-below='false' formula='confidence' id='refline19' label-type='none' paired-distribution-id='refline20' probability='95' scope='per-table' show-lines='both' symmetric='false' value-column='[federated.1tsly3o1fc4b3q17gxnmm0yhqy4e].[sum:Foreign Direct Investment, Net Inflows (% Of Gdp):qk]' z-order='4' />
+            <reference-line axis-column='[federated.1tsly3o1fc4b3q17gxnmm0yhqy4e].[sum:Foreign Direct Investment, Net Inflows (% Of Gdp):qk]' enable-instant-analytics='true' formula='average' id='refline20' label-type='automatic' paired-distribution-id='refline19' probability='95' scope='per-table' value-column='[federated.1tsly3o1fc4b3q17gxnmm0yhqy4e].[sum:Foreign Direct Investment, Net Inflows (% Of Gdp):qk]' z-order='5' />
+            <reference-line axis-column='[federated.1tsly3o1fc4b3q17gxnmm0yhqy4e].[sum:Foreign Direct Investment, Net Inflows (% Of Gdp):qk]' enable-instant-analytics='true' formula='constant' id='refline21' label-type='automatic' scope='per-table' value='5.0999999999999996' value-column='[federated.1tsly3o1fc4b3q17gxnmm0yhqy4e].[sum:Foreign Direct Investment, Net Inflows (% Of Gdp):qk]' z-order='6' />
+            <reference-line axis-column='[federated.1tsly3o1fc4b3q17gxnmm0yhqy4e].[none:Year:qk]' enable-instant-analytics='true' formula='min' id='refline5' label-type='automatic' scope='per-table' value-column='[federated.1tsly3o1fc4b3q17gxnmm0yhqy4e].[none:Year:qk]' z-order='1' />
+            <reference-line axis-column='[federated.1tsly3o1fc4b3q17gxnmm0yhqy4e].[none:Year:qk]' enable-instant-analytics='true' formula='constant' id='refline6' label-type='none' paired-id='refline7' scope='per-table' symmetric='false' value='2005' value-column='[federated.1tsly3o1fc4b3q17gxnmm0yhqy4e].[none:Year:qk]' z-order='2' />
+            <reference-line axis-column='[federated.1tsly3o1fc4b3q17gxnmm0yhqy4e].[none:Year:qk]' enable-instant-analytics='true' formula='constant' id='refline7' label-type='none' paired-id='refline6' scope='per-table' symmetric='false' value='2017' value-column='[federated.1tsly3o1fc4b3q17gxnmm0yhqy4e].[none:Year:qk]' z-order='3' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1tsly3o1fc4b3q17gxnmm0yhqy4e].[sum:Foreign Direct Investment, Net Inflows (% Of Gdp):qk]</rows>
+        <cols>[federated.1tsly3o1fc4b3q17gxnmm0yhqy4e].[none:Year:qk]</cols>
+      </table>
+      <simple-id uuid='{F36CC84A-8221-4DFC-B1EB-3374C6A3B055}' />
+    </worksheet>
+    <worksheet name='Food_Production'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>FOOD PRODUCTION INDEX (2004-2006 = 100)</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='selected30percentile_indicators' name='federated.1tsly3o1fc4b3q17gxnmm0yhqy4e' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1tsly3o1fc4b3q17gxnmm0yhqy4e'>
+            <column datatype='string' name='[Country Name]' role='dimension' semantic-role='[Country].[Name]' type='nominal' />
+            <column datatype='real' name='[Food Production Index (2004-2006 = 100)]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Year]' role='measure' type='quantitative' />
+            <column-instance column='[Country Name]' derivation='None' name='[none:Country Name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[region_USAID]' derivation='None' name='[none:region_USAID:nk]' pivot='key' type='nominal' />
+            <column datatype='string' name='[region_USAID]' role='dimension' semantic-role='[Country].[Name]' type='nominal' />
+            <column-instance column='[Food Production Index (2004-2006 = 100)]' derivation='Sum' name='[sum:Food Production Index (2004-2006 = 100):qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1tsly3o1fc4b3q17gxnmm0yhqy4e].[none:Country Name:nk]'>
+            <groupfilter function='level-members' level='[none:Country Name:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1tsly3o1fc4b3q17gxnmm0yhqy4e].[none:region_USAID:nk]'>
+            <groupfilter function='member' level='[none:region_USAID:nk]' member='&quot;Sub-Saharan Africa (SSA)&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1tsly3o1fc4b3q17gxnmm0yhqy4e].[none:Country Name:nk]</column>
+            <column>[federated.1tsly3o1fc4b3q17gxnmm0yhqy4e].[none:region_USAID:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' domain-expand='false' field='[federated.1tsly3o1fc4b3q17gxnmm0yhqy4e].[sum:Food Production Index (2004-2006 = 100):qk]' field-type='quantitative' scale='log' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='fill-above' id='refline5' value='#00000000' />
+            <format attr='fill-below' id='refline5' value='#00000000' />
+          </style-rule>
+          <style-rule element='refband'>
+            <format attr='fill-color' id='refline2' value='#f0f1e8' />
+            <format attr='fill-color' id='refline6' value='#eff3e3' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='4' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1tsly3o1fc4b3q17gxnmm0yhqy4e].[none:Country Name:nk]' />
+            </encodings>
+            <reference-line axis-column='[federated.1tsly3o1fc4b3q17gxnmm0yhqy4e].[sum:Food Production Index (2004-2006 = 100):qk]' enable-instant-analytics='true' fill-above='false' fill-below='false' formula='confidence' id='refline11' label-type='none' paired-distribution-id='refline12' probability='95' scope='per-table' show-lines='both' symmetric='false' value-column='[federated.1tsly3o1fc4b3q17gxnmm0yhqy4e].[sum:Food Production Index (2004-2006 = 100):qk]' z-order='4' />
+            <reference-line axis-column='[federated.1tsly3o1fc4b3q17gxnmm0yhqy4e].[sum:Food Production Index (2004-2006 = 100):qk]' enable-instant-analytics='true' formula='average' id='refline12' label-type='automatic' paired-distribution-id='refline11' probability='95' scope='per-table' value-column='[federated.1tsly3o1fc4b3q17gxnmm0yhqy4e].[sum:Food Production Index (2004-2006 = 100):qk]' z-order='5' />
+            <reference-line axis-column='[federated.1tsly3o1fc4b3q17gxnmm0yhqy4e].[sum:Food Production Index (2004-2006 = 100):qk]' enable-instant-analytics='true' formula='constant' id='refline13' label-type='automatic' scope='per-table' value='121.7' value-column='[federated.1tsly3o1fc4b3q17gxnmm0yhqy4e].[sum:Food Production Index (2004-2006 = 100):qk]' z-order='6' />
+            <reference-line axis-column='[federated.1tsly3o1fc4b3q17gxnmm0yhqy4e].[none:Year:qk]' enable-instant-analytics='true' formula='min' id='refline5' label-type='automatic' scope='per-table' value-column='[federated.1tsly3o1fc4b3q17gxnmm0yhqy4e].[none:Year:qk]' z-order='1' />
+            <reference-line axis-column='[federated.1tsly3o1fc4b3q17gxnmm0yhqy4e].[none:Year:qk]' enable-instant-analytics='true' formula='constant' id='refline6' label-type='none' paired-id='refline7' scope='per-table' symmetric='false' value='2005' value-column='[federated.1tsly3o1fc4b3q17gxnmm0yhqy4e].[none:Year:qk]' z-order='2' />
+            <reference-line axis-column='[federated.1tsly3o1fc4b3q17gxnmm0yhqy4e].[none:Year:qk]' enable-instant-analytics='true' formula='constant' id='refline7' label-type='none' paired-id='refline6' scope='per-table' symmetric='false' value='2017' value-column='[federated.1tsly3o1fc4b3q17gxnmm0yhqy4e].[none:Year:qk]' z-order='3' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1tsly3o1fc4b3q17gxnmm0yhqy4e].[sum:Food Production Index (2004-2006 = 100):qk]</rows>
+        <cols>[federated.1tsly3o1fc4b3q17gxnmm0yhqy4e].[none:Year:qk]</cols>
+      </table>
+      <simple-id uuid='{6C42DA9D-EEF2-4C3B-805C-EF1B49DDF291}' />
+    </worksheet>
+    <worksheet name='GNI'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>GNI GROWTH (ANNUAL %)</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='selected30percentile_indicators' name='federated.1tsly3o1fc4b3q17gxnmm0yhqy4e' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1tsly3o1fc4b3q17gxnmm0yhqy4e'>
+            <column datatype='string' name='[Country Name]' role='dimension' semantic-role='[Country].[Name]' type='nominal' />
+            <column datatype='real' name='[Gni Growth (Annual %)]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Year]' role='measure' type='quantitative' />
+            <column-instance column='[Country Name]' derivation='None' name='[none:Country Name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[region_USAID]' derivation='None' name='[none:region_USAID:nk]' pivot='key' type='nominal' />
+            <column datatype='string' name='[region_USAID]' role='dimension' semantic-role='[Country].[Name]' type='nominal' />
+            <column-instance column='[Gni Growth (Annual %)]' derivation='Sum' name='[sum:Gni Growth (Annual %):qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1tsly3o1fc4b3q17gxnmm0yhqy4e].[none:Country Name:nk]'>
+            <groupfilter function='level-members' level='[none:Country Name:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1tsly3o1fc4b3q17gxnmm0yhqy4e].[none:region_USAID:nk]'>
+            <groupfilter function='member' level='[none:region_USAID:nk]' member='&quot;Middle East and North Africa (MENA)&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1tsly3o1fc4b3q17gxnmm0yhqy4e].[none:Country Name:nk]</column>
+            <column>[federated.1tsly3o1fc4b3q17gxnmm0yhqy4e].[none:region_USAID:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='refline'>
+            <format attr='fill-above' id='refline5' value='#00000000' />
+            <format attr='fill-below' id='refline5' value='#00000000' />
+          </style-rule>
+          <style-rule element='refband'>
+            <format attr='fill-color' id='refline2' value='#f0f1e8' />
+            <format attr='fill-color' id='refline6' value='#eff3e3' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1tsly3o1fc4b3q17gxnmm0yhqy4e].[none:Country Name:nk]' />
+            </encodings>
+            <reference-line axis-column='[federated.1tsly3o1fc4b3q17gxnmm0yhqy4e].[sum:Gni Growth (Annual %):qk]' enable-instant-analytics='true' fill-above='false' fill-below='false' formula='confidence' id='refline0' label-type='none' paired-distribution-id='refline1' probability='95' scope='per-table' show-lines='both' symmetric='false' value-column='[federated.1tsly3o1fc4b3q17gxnmm0yhqy4e].[sum:Gni Growth (Annual %):qk]' z-order='1' />
+            <reference-line axis-column='[federated.1tsly3o1fc4b3q17gxnmm0yhqy4e].[sum:Gni Growth (Annual %):qk]' enable-instant-analytics='true' formula='average' id='refline1' label-type='automatic' paired-distribution-id='refline0' probability='95' scope='per-table' value-column='[federated.1tsly3o1fc4b3q17gxnmm0yhqy4e].[sum:Gni Growth (Annual %):qk]' z-order='2' />
+            <reference-line axis-column='[federated.1tsly3o1fc4b3q17gxnmm0yhqy4e].[sum:Gni Growth (Annual %):qk]' enable-instant-analytics='true' fill-above='false' fill-below='false' formula='confidence' id='refline2' label-type='none' paired-distribution-id='refline3' probability='95' scope='per-table' show-lines='both' symmetric='false' value-column='[federated.1tsly3o1fc4b3q17gxnmm0yhqy4e].[sum:Gni Growth (Annual %):qk]' z-order='3' />
+            <reference-line axis-column='[federated.1tsly3o1fc4b3q17gxnmm0yhqy4e].[sum:Gni Growth (Annual %):qk]' enable-instant-analytics='true' formula='average' id='refline3' label-type='automatic' paired-distribution-id='refline2' probability='95' scope='per-table' value-column='[federated.1tsly3o1fc4b3q17gxnmm0yhqy4e].[sum:Gni Growth (Annual %):qk]' z-order='4' />
+            <reference-line axis-column='[federated.1tsly3o1fc4b3q17gxnmm0yhqy4e].[sum:Gni Growth (Annual %):qk]' enable-instant-analytics='true' formula='constant' id='refline4' label-type='automatic' scope='per-table' value='4.79' value-column='[federated.1tsly3o1fc4b3q17gxnmm0yhqy4e].[sum:Gni Growth (Annual %):qk]' z-order='5' />
+            <reference-line axis-column='[federated.1tsly3o1fc4b3q17gxnmm0yhqy4e].[none:Year:qk]' enable-instant-analytics='true' formula='min' id='refline5' label-type='automatic' scope='per-table' value-column='[federated.1tsly3o1fc4b3q17gxnmm0yhqy4e].[none:Year:qk]' z-order='6' />
+            <reference-line axis-column='[federated.1tsly3o1fc4b3q17gxnmm0yhqy4e].[none:Year:qk]' enable-instant-analytics='true' formula='constant' id='refline6' label-type='none' paired-id='refline7' scope='per-table' symmetric='false' value='2005' value-column='[federated.1tsly3o1fc4b3q17gxnmm0yhqy4e].[none:Year:qk]' z-order='7' />
+            <reference-line axis-column='[federated.1tsly3o1fc4b3q17gxnmm0yhqy4e].[none:Year:qk]' enable-instant-analytics='true' formula='constant' id='refline7' label-type='none' paired-id='refline6' scope='per-table' symmetric='false' value='2017' value-column='[federated.1tsly3o1fc4b3q17gxnmm0yhqy4e].[none:Year:qk]' z-order='8' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1tsly3o1fc4b3q17gxnmm0yhqy4e].[sum:Gni Growth (Annual %):qk]</rows>
+        <cols>[federated.1tsly3o1fc4b3q17gxnmm0yhqy4e].[none:Year:qk]</cols>
+      </table>
+      <simple-id uuid='{03E97E80-120B-4B21-B481-DE95747AA0AB}' />
+    </worksheet>
+    <worksheet name='GNI (2)'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>CORRUPTION PERCEPTION INDEX</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='selected30percentile_indicators' name='federated.1tsly3o1fc4b3q17gxnmm0yhqy4e' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1tsly3o1fc4b3q17gxnmm0yhqy4e'>
+            <column datatype='real' name='[Corruption Perception Index]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Country Name]' role='dimension' semantic-role='[Country].[Name]' type='nominal' />
+            <column datatype='integer' name='[Year]' role='measure' type='quantitative' />
+            <column-instance column='[Country Name]' derivation='None' name='[none:Country Name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[region_USAID]' derivation='None' name='[none:region_USAID:nk]' pivot='key' type='nominal' />
+            <column datatype='string' name='[region_USAID]' role='dimension' semantic-role='[Country].[Name]' type='nominal' />
+            <column-instance column='[Corruption Perception Index]' derivation='Sum' name='[sum:Corruption Perception Index:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1tsly3o1fc4b3q17gxnmm0yhqy4e].[none:Country Name:nk]'>
+            <groupfilter function='level-members' level='[none:Country Name:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1tsly3o1fc4b3q17gxnmm0yhqy4e].[none:region_USAID:nk]'>
+            <groupfilter function='member' level='[none:region_USAID:nk]' member='&quot;Sub-Saharan Africa (SSA)&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1tsly3o1fc4b3q17gxnmm0yhqy4e].[none:Country Name:nk]</column>
+            <column>[federated.1tsly3o1fc4b3q17gxnmm0yhqy4e].[none:region_USAID:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' domain-expand='false' field='[federated.1tsly3o1fc4b3q17gxnmm0yhqy4e].[sum:Corruption Perception Index:qk]' field-type='quantitative' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='fill-above' id='refline5' value='#00000000' />
+            <format attr='fill-below' id='refline5' value='#00000000' />
+          </style-rule>
+          <style-rule element='refband'>
+            <format attr='fill-color' id='refline2' value='#f0f1e8' />
+            <format attr='fill-color' id='refline6' value='#eff3e3' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1tsly3o1fc4b3q17gxnmm0yhqy4e].[none:Country Name:nk]' />
+            </encodings>
+            <reference-line axis-column='[federated.1tsly3o1fc4b3q17gxnmm0yhqy4e].[sum:Corruption Perception Index:qk]' enable-instant-analytics='true' formula='constant' id='refline10' label-type='automatic' scope='per-table' value='30.12' value-column='[federated.1tsly3o1fc4b3q17gxnmm0yhqy4e].[sum:Corruption Perception Index:qk]' z-order='11' />
+            <reference-line axis-column='[federated.1tsly3o1fc4b3q17gxnmm0yhqy4e].[none:Year:qk]' enable-instant-analytics='true' formula='min' id='refline5' label-type='automatic' scope='per-table' value-column='[federated.1tsly3o1fc4b3q17gxnmm0yhqy4e].[none:Year:qk]' z-order='6' />
+            <reference-line axis-column='[federated.1tsly3o1fc4b3q17gxnmm0yhqy4e].[none:Year:qk]' enable-instant-analytics='true' formula='constant' id='refline6' label-type='none' paired-id='refline7' scope='per-table' symmetric='false' value='2005' value-column='[federated.1tsly3o1fc4b3q17gxnmm0yhqy4e].[none:Year:qk]' z-order='7' />
+            <reference-line axis-column='[federated.1tsly3o1fc4b3q17gxnmm0yhqy4e].[none:Year:qk]' enable-instant-analytics='true' formula='constant' id='refline7' label-type='none' paired-id='refline6' scope='per-table' symmetric='false' value='2017' value-column='[federated.1tsly3o1fc4b3q17gxnmm0yhqy4e].[none:Year:qk]' z-order='8' />
+            <reference-line axis-column='[federated.1tsly3o1fc4b3q17gxnmm0yhqy4e].[sum:Corruption Perception Index:qk]' enable-instant-analytics='true' fill-above='false' fill-below='false' formula='confidence' id='refline8' label-type='none' paired-distribution-id='refline9' probability='95' scope='per-table' show-lines='both' symmetric='false' value-column='[federated.1tsly3o1fc4b3q17gxnmm0yhqy4e].[sum:Corruption Perception Index:qk]' z-order='9' />
+            <reference-line axis-column='[federated.1tsly3o1fc4b3q17gxnmm0yhqy4e].[sum:Corruption Perception Index:qk]' enable-instant-analytics='true' formula='average' id='refline9' label-type='automatic' paired-distribution-id='refline8' probability='95' scope='per-table' value-column='[federated.1tsly3o1fc4b3q17gxnmm0yhqy4e].[sum:Corruption Perception Index:qk]' z-order='10' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1tsly3o1fc4b3q17gxnmm0yhqy4e].[sum:Corruption Perception Index:qk]</rows>
+        <cols>[federated.1tsly3o1fc4b3q17gxnmm0yhqy4e].[none:Year:qk]</cols>
+      </table>
+      <simple-id uuid='{62697607-42C5-4376-B787-14A807C6D7CE}' />
+    </worksheet>
+    <worksheet name='Int_Homicides'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>INTENTIONAL HOMICIDES (PER 100,000 PEOPLE)</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='selected30percentile_indicators' name='federated.1tsly3o1fc4b3q17gxnmm0yhqy4e' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1tsly3o1fc4b3q17gxnmm0yhqy4e'>
+            <column datatype='string' name='[Country Name]' role='dimension' semantic-role='[Country].[Name]' type='nominal' />
+            <column datatype='real' name='[Intentional Homicides (Per 100,000 People)]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Year]' role='measure' type='quantitative' />
+            <column-instance column='[Country Name]' derivation='None' name='[none:Country Name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[region_USAID]' derivation='None' name='[none:region_USAID:nk]' pivot='key' type='nominal' />
+            <column datatype='string' name='[region_USAID]' role='dimension' semantic-role='[Country].[Name]' type='nominal' />
+            <column-instance column='[Intentional Homicides (Per 100,000 People)]' derivation='Sum' name='[sum:Intentional Homicides (Per 100,000 People):qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1tsly3o1fc4b3q17gxnmm0yhqy4e].[none:Country Name:nk]'>
+            <groupfilter function='level-members' level='[none:Country Name:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1tsly3o1fc4b3q17gxnmm0yhqy4e].[none:region_USAID:nk]'>
+            <groupfilter function='member' level='[none:region_USAID:nk]' member='&quot;Sub-Saharan Africa (SSA)&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1tsly3o1fc4b3q17gxnmm0yhqy4e].[none:Country Name:nk]</column>
+            <column>[federated.1tsly3o1fc4b3q17gxnmm0yhqy4e].[none:region_USAID:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='refline'>
+            <format attr='fill-above' id='refline5' value='#00000000' />
+            <format attr='fill-below' id='refline5' value='#00000000' />
+          </style-rule>
+          <style-rule element='refband'>
+            <format attr='fill-color' id='refline2' value='#f0f1e8' />
+            <format attr='fill-color' id='refline6' value='#eff3e3' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1tsly3o1fc4b3q17gxnmm0yhqy4e].[none:Country Name:nk]' />
+            </encodings>
+            <reference-line axis-column='[federated.1tsly3o1fc4b3q17gxnmm0yhqy4e].[sum:Intentional Homicides (Per 100,000 People):qk]' enable-instant-analytics='true' formula='constant' id='refline10' label-type='automatic' scope='per-table' value='8.9000000000000004' value-column='[federated.1tsly3o1fc4b3q17gxnmm0yhqy4e].[sum:Intentional Homicides (Per 100,000 People):qk]' z-order='6' />
+            <reference-line axis-column='[federated.1tsly3o1fc4b3q17gxnmm0yhqy4e].[none:Year:qk]' enable-instant-analytics='true' formula='min' id='refline5' label-type='automatic' scope='per-table' value-column='[federated.1tsly3o1fc4b3q17gxnmm0yhqy4e].[none:Year:qk]' z-order='1' />
+            <reference-line axis-column='[federated.1tsly3o1fc4b3q17gxnmm0yhqy4e].[none:Year:qk]' enable-instant-analytics='true' formula='constant' id='refline6' label-type='none' paired-id='refline7' scope='per-table' symmetric='false' value='2005' value-column='[federated.1tsly3o1fc4b3q17gxnmm0yhqy4e].[none:Year:qk]' z-order='2' />
+            <reference-line axis-column='[federated.1tsly3o1fc4b3q17gxnmm0yhqy4e].[none:Year:qk]' enable-instant-analytics='true' formula='constant' id='refline7' label-type='none' paired-id='refline6' scope='per-table' symmetric='false' value='2017' value-column='[federated.1tsly3o1fc4b3q17gxnmm0yhqy4e].[none:Year:qk]' z-order='3' />
+            <reference-line axis-column='[federated.1tsly3o1fc4b3q17gxnmm0yhqy4e].[sum:Intentional Homicides (Per 100,000 People):qk]' enable-instant-analytics='true' fill-above='false' fill-below='false' formula='confidence' id='refline8' label-type='none' paired-distribution-id='refline9' probability='95' scope='per-table' show-lines='both' symmetric='false' value-column='[federated.1tsly3o1fc4b3q17gxnmm0yhqy4e].[sum:Intentional Homicides (Per 100,000 People):qk]' z-order='4' />
+            <reference-line axis-column='[federated.1tsly3o1fc4b3q17gxnmm0yhqy4e].[sum:Intentional Homicides (Per 100,000 People):qk]' enable-instant-analytics='true' formula='average' id='refline9' label-type='automatic' paired-distribution-id='refline8' probability='95' scope='per-table' value-column='[federated.1tsly3o1fc4b3q17gxnmm0yhqy4e].[sum:Intentional Homicides (Per 100,000 People):qk]' z-order='5' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1tsly3o1fc4b3q17gxnmm0yhqy4e].[sum:Intentional Homicides (Per 100,000 People):qk]</rows>
+        <cols>[federated.1tsly3o1fc4b3q17gxnmm0yhqy4e].[none:Year:qk]</cols>
+      </table>
+      <simple-id uuid='{9B6896C3-0562-434B-8934-7AA6A3F7A1A6}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.5' source-height='44'>
+    <window class='worksheet' name='GNI (2)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='dropdown' param='[federated.1tsly3o1fc4b3q17gxnmm0yhqy4e].[none:Country Name:nk]' type='filter' />
+            <card mode='dropdown' param='[federated.1tsly3o1fc4b3q17gxnmm0yhqy4e].[none:region_USAID:nk]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{22234E1E-01D2-42F8-A543-C63CFD25F823}' />
+    </window>
+    <window class='worksheet' maximized='true' name='GNI'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='dropdown' param='[federated.1tsly3o1fc4b3q17gxnmm0yhqy4e].[none:Country Name:nk]' type='filter' />
+            <card mode='dropdown' param='[federated.1tsly3o1fc4b3q17gxnmm0yhqy4e].[none:region_USAID:nk]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{8F23E024-A9BC-4344-9345-CF3095D70BE0}' />
+    </window>
+    <window class='worksheet' name='Int_Homicides'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='dropdown' param='[federated.1tsly3o1fc4b3q17gxnmm0yhqy4e].[none:Country Name:nk]' type='filter' />
+            <card mode='dropdown' param='[federated.1tsly3o1fc4b3q17gxnmm0yhqy4e].[none:region_USAID:nk]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{EF7DF722-66DE-467F-B462-BCFCCF24BF86}' />
+    </window>
+    <window class='worksheet' name='Food_Production'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='dropdown' param='[federated.1tsly3o1fc4b3q17gxnmm0yhqy4e].[none:Country Name:nk]' type='filter' />
+            <card mode='dropdown' param='[federated.1tsly3o1fc4b3q17gxnmm0yhqy4e].[none:region_USAID:nk]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{263700F7-5532-4564-831A-1A391BF1B6D8}' />
+    </window>
+    <window class='worksheet' name='Claims_Central_Gov'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='dropdown' param='[federated.1tsly3o1fc4b3q17gxnmm0yhqy4e].[none:Country Name:nk]' type='filter' />
+            <card mode='dropdown' param='[federated.1tsly3o1fc4b3q17gxnmm0yhqy4e].[none:region_USAID:nk]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{1A5CE017-6A25-4791-A2CA-8CA9D8E84216}' />
+    </window>
+    <window class='worksheet' name='FDI_Net_Inflows'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='dropdown' param='[federated.1tsly3o1fc4b3q17gxnmm0yhqy4e].[none:Country Name:nk]' type='filter' />
+            <card mode='dropdown' param='[federated.1tsly3o1fc4b3q17gxnmm0yhqy4e].[none:region_USAID:nk]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{0D8C7C51-73C6-4496-90FD-155DBEC4D9DB}' />
+    </window>
+  </windows>
+</workbook>
