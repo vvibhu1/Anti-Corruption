@@ -746,6 +746,82 @@
     </datasource>
   </datasources>
   <worksheets>
+    <worksheet name='CPI'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>CORRUPTION PERCEPTION INDEX</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='selected30percentile_indicators' name='federated.1tsly3o1fc4b3q17gxnmm0yhqy4e' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1tsly3o1fc4b3q17gxnmm0yhqy4e'>
+            <column datatype='real' name='[Corruption Perception Index]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Country Name]' role='dimension' semantic-role='[Country].[Name]' type='nominal' />
+            <column datatype='integer' name='[Year]' role='measure' type='quantitative' />
+            <column-instance column='[Country Name]' derivation='None' name='[none:Country Name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[region_USAID]' derivation='None' name='[none:region_USAID:nk]' pivot='key' type='nominal' />
+            <column datatype='string' name='[region_USAID]' role='dimension' semantic-role='[Country].[Name]' type='nominal' />
+            <column-instance column='[Corruption Perception Index]' derivation='Sum' name='[sum:Corruption Perception Index:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1tsly3o1fc4b3q17gxnmm0yhqy4e].[none:Country Name:nk]'>
+            <groupfilter function='level-members' level='[none:Country Name:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1tsly3o1fc4b3q17gxnmm0yhqy4e].[none:region_USAID:nk]'>
+            <groupfilter function='member' level='[none:region_USAID:nk]' member='&quot;Sub-Saharan Africa (SSA)&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1tsly3o1fc4b3q17gxnmm0yhqy4e].[none:Country Name:nk]</column>
+            <column>[federated.1tsly3o1fc4b3q17gxnmm0yhqy4e].[none:region_USAID:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' domain-expand='false' field='[federated.1tsly3o1fc4b3q17gxnmm0yhqy4e].[sum:Corruption Perception Index:qk]' field-type='quantitative' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='fill-above' id='refline5' value='#00000000' />
+            <format attr='fill-below' id='refline5' value='#00000000' />
+          </style-rule>
+          <style-rule element='refband'>
+            <format attr='fill-color' id='refline2' value='#f0f1e8' />
+            <format attr='fill-color' id='refline6' value='#eff3e3' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1tsly3o1fc4b3q17gxnmm0yhqy4e].[none:Country Name:nk]' />
+            </encodings>
+            <reference-line axis-column='[federated.1tsly3o1fc4b3q17gxnmm0yhqy4e].[sum:Corruption Perception Index:qk]' enable-instant-analytics='true' formula='constant' id='refline10' label-type='automatic' scope='per-table' value='30.12' value-column='[federated.1tsly3o1fc4b3q17gxnmm0yhqy4e].[sum:Corruption Perception Index:qk]' z-order='11' />
+            <reference-line axis-column='[federated.1tsly3o1fc4b3q17gxnmm0yhqy4e].[none:Year:qk]' enable-instant-analytics='true' formula='min' id='refline5' label-type='automatic' scope='per-table' value-column='[federated.1tsly3o1fc4b3q17gxnmm0yhqy4e].[none:Year:qk]' z-order='6' />
+            <reference-line axis-column='[federated.1tsly3o1fc4b3q17gxnmm0yhqy4e].[none:Year:qk]' enable-instant-analytics='true' formula='constant' id='refline6' label-type='none' paired-id='refline7' scope='per-table' symmetric='false' value='2005' value-column='[federated.1tsly3o1fc4b3q17gxnmm0yhqy4e].[none:Year:qk]' z-order='7' />
+            <reference-line axis-column='[federated.1tsly3o1fc4b3q17gxnmm0yhqy4e].[none:Year:qk]' enable-instant-analytics='true' formula='constant' id='refline7' label-type='none' paired-id='refline6' scope='per-table' symmetric='false' value='2017' value-column='[federated.1tsly3o1fc4b3q17gxnmm0yhqy4e].[none:Year:qk]' z-order='8' />
+            <reference-line axis-column='[federated.1tsly3o1fc4b3q17gxnmm0yhqy4e].[sum:Corruption Perception Index:qk]' enable-instant-analytics='true' fill-above='false' fill-below='false' formula='confidence' id='refline8' label-type='none' paired-distribution-id='refline9' probability='95' scope='per-table' show-lines='both' symmetric='false' value-column='[federated.1tsly3o1fc4b3q17gxnmm0yhqy4e].[sum:Corruption Perception Index:qk]' z-order='9' />
+            <reference-line axis-column='[federated.1tsly3o1fc4b3q17gxnmm0yhqy4e].[sum:Corruption Perception Index:qk]' enable-instant-analytics='true' formula='average' id='refline9' label-type='automatic' paired-distribution-id='refline8' probability='95' scope='per-table' value-column='[federated.1tsly3o1fc4b3q17gxnmm0yhqy4e].[sum:Corruption Perception Index:qk]' z-order='10' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1tsly3o1fc4b3q17gxnmm0yhqy4e].[sum:Corruption Perception Index:qk]</rows>
+        <cols>[federated.1tsly3o1fc4b3q17gxnmm0yhqy4e].[none:Year:qk]</cols>
+      </table>
+      <simple-id uuid='{62697607-42C5-4376-B787-14A807C6D7CE}' />
+    </worksheet>
     <worksheet name='Claims_Central_Gov'>
       <layout-options>
         <title>
@@ -995,7 +1071,7 @@
             <groupfilter function='level-members' level='[none:Country Name:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
           </filter>
           <filter class='categorical' column='[federated.1tsly3o1fc4b3q17gxnmm0yhqy4e].[none:region_USAID:nk]'>
-            <groupfilter function='member' level='[none:region_USAID:nk]' member='&quot;Middle East and North Africa (MENA)&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+            <groupfilter function='member' level='[none:region_USAID:nk]' member='&quot;Sub-Saharan Africa (SSA)&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
           </filter>
           <slices>
             <column>[federated.1tsly3o1fc4b3q17gxnmm0yhqy4e].[none:Country Name:nk]</column>
@@ -1043,82 +1119,6 @@
       </table>
       <simple-id uuid='{03E97E80-120B-4B21-B481-DE95747AA0AB}' />
     </worksheet>
-    <worksheet name='GNI (2)'>
-      <layout-options>
-        <title>
-          <formatted-text>
-            <run>CORRUPTION PERCEPTION INDEX</run>
-          </formatted-text>
-        </title>
-      </layout-options>
-      <table>
-        <view>
-          <datasources>
-            <datasource caption='selected30percentile_indicators' name='federated.1tsly3o1fc4b3q17gxnmm0yhqy4e' />
-          </datasources>
-          <datasource-dependencies datasource='federated.1tsly3o1fc4b3q17gxnmm0yhqy4e'>
-            <column datatype='real' name='[Corruption Perception Index]' role='measure' type='quantitative' />
-            <column datatype='string' name='[Country Name]' role='dimension' semantic-role='[Country].[Name]' type='nominal' />
-            <column datatype='integer' name='[Year]' role='measure' type='quantitative' />
-            <column-instance column='[Country Name]' derivation='None' name='[none:Country Name:nk]' pivot='key' type='nominal' />
-            <column-instance column='[Year]' derivation='None' name='[none:Year:qk]' pivot='key' type='quantitative' />
-            <column-instance column='[region_USAID]' derivation='None' name='[none:region_USAID:nk]' pivot='key' type='nominal' />
-            <column datatype='string' name='[region_USAID]' role='dimension' semantic-role='[Country].[Name]' type='nominal' />
-            <column-instance column='[Corruption Perception Index]' derivation='Sum' name='[sum:Corruption Perception Index:qk]' pivot='key' type='quantitative' />
-          </datasource-dependencies>
-          <filter class='categorical' column='[federated.1tsly3o1fc4b3q17gxnmm0yhqy4e].[none:Country Name:nk]'>
-            <groupfilter function='level-members' level='[none:Country Name:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
-          </filter>
-          <filter class='categorical' column='[federated.1tsly3o1fc4b3q17gxnmm0yhqy4e].[none:region_USAID:nk]'>
-            <groupfilter function='member' level='[none:region_USAID:nk]' member='&quot;Sub-Saharan Africa (SSA)&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
-          </filter>
-          <slices>
-            <column>[federated.1tsly3o1fc4b3q17gxnmm0yhqy4e].[none:Country Name:nk]</column>
-            <column>[federated.1tsly3o1fc4b3q17gxnmm0yhqy4e].[none:region_USAID:nk]</column>
-          </slices>
-          <aggregation value='true' />
-        </view>
-        <style>
-          <style-rule element='axis'>
-            <encoding attr='space' class='0' domain-expand='false' field='[federated.1tsly3o1fc4b3q17gxnmm0yhqy4e].[sum:Corruption Perception Index:qk]' field-type='quantitative' scope='rows' type='space' />
-          </style-rule>
-          <style-rule element='refline'>
-            <format attr='fill-above' id='refline5' value='#00000000' />
-            <format attr='fill-below' id='refline5' value='#00000000' />
-          </style-rule>
-          <style-rule element='refband'>
-            <format attr='fill-color' id='refline2' value='#f0f1e8' />
-            <format attr='fill-color' id='refline6' value='#eff3e3' />
-          </style-rule>
-        </style>
-        <panes>
-          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
-            <view>
-              <breakdown value='auto' />
-            </view>
-            <mark class='Automatic' />
-            <encodings>
-              <color column='[federated.1tsly3o1fc4b3q17gxnmm0yhqy4e].[none:Country Name:nk]' />
-            </encodings>
-            <reference-line axis-column='[federated.1tsly3o1fc4b3q17gxnmm0yhqy4e].[sum:Corruption Perception Index:qk]' enable-instant-analytics='true' formula='constant' id='refline10' label-type='automatic' scope='per-table' value='30.12' value-column='[federated.1tsly3o1fc4b3q17gxnmm0yhqy4e].[sum:Corruption Perception Index:qk]' z-order='11' />
-            <reference-line axis-column='[federated.1tsly3o1fc4b3q17gxnmm0yhqy4e].[none:Year:qk]' enable-instant-analytics='true' formula='min' id='refline5' label-type='automatic' scope='per-table' value-column='[federated.1tsly3o1fc4b3q17gxnmm0yhqy4e].[none:Year:qk]' z-order='6' />
-            <reference-line axis-column='[federated.1tsly3o1fc4b3q17gxnmm0yhqy4e].[none:Year:qk]' enable-instant-analytics='true' formula='constant' id='refline6' label-type='none' paired-id='refline7' scope='per-table' symmetric='false' value='2005' value-column='[federated.1tsly3o1fc4b3q17gxnmm0yhqy4e].[none:Year:qk]' z-order='7' />
-            <reference-line axis-column='[federated.1tsly3o1fc4b3q17gxnmm0yhqy4e].[none:Year:qk]' enable-instant-analytics='true' formula='constant' id='refline7' label-type='none' paired-id='refline6' scope='per-table' symmetric='false' value='2017' value-column='[federated.1tsly3o1fc4b3q17gxnmm0yhqy4e].[none:Year:qk]' z-order='8' />
-            <reference-line axis-column='[federated.1tsly3o1fc4b3q17gxnmm0yhqy4e].[sum:Corruption Perception Index:qk]' enable-instant-analytics='true' fill-above='false' fill-below='false' formula='confidence' id='refline8' label-type='none' paired-distribution-id='refline9' probability='95' scope='per-table' show-lines='both' symmetric='false' value-column='[federated.1tsly3o1fc4b3q17gxnmm0yhqy4e].[sum:Corruption Perception Index:qk]' z-order='9' />
-            <reference-line axis-column='[federated.1tsly3o1fc4b3q17gxnmm0yhqy4e].[sum:Corruption Perception Index:qk]' enable-instant-analytics='true' formula='average' id='refline9' label-type='automatic' paired-distribution-id='refline8' probability='95' scope='per-table' value-column='[federated.1tsly3o1fc4b3q17gxnmm0yhqy4e].[sum:Corruption Perception Index:qk]' z-order='10' />
-            <style>
-              <style-rule element='mark'>
-                <format attr='mark-labels-cull' value='true' />
-                <format attr='mark-labels-show' value='false' />
-              </style-rule>
-            </style>
-          </pane>
-        </panes>
-        <rows>[federated.1tsly3o1fc4b3q17gxnmm0yhqy4e].[sum:Corruption Perception Index:qk]</rows>
-        <cols>[federated.1tsly3o1fc4b3q17gxnmm0yhqy4e].[none:Year:qk]</cols>
-      </table>
-      <simple-id uuid='{62697607-42C5-4376-B787-14A807C6D7CE}' />
-    </worksheet>
     <worksheet name='Int_Homicides'>
       <layout-options>
         <title>
@@ -1146,7 +1146,7 @@
             <groupfilter function='level-members' level='[none:Country Name:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
           </filter>
           <filter class='categorical' column='[federated.1tsly3o1fc4b3q17gxnmm0yhqy4e].[none:region_USAID:nk]'>
-            <groupfilter function='member' level='[none:region_USAID:nk]' member='&quot;Sub-Saharan Africa (SSA)&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+            <groupfilter function='member' level='[none:region_USAID:nk]' member='&quot;Europe and Eurasia (E&amp;E)&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
           </filter>
           <slices>
             <column>[federated.1tsly3o1fc4b3q17gxnmm0yhqy4e].[none:Country Name:nk]</column>
@@ -1194,7 +1194,7 @@
     </worksheet>
   </worksheets>
   <windows saved-dpi-scale-factor='1.5' source-height='44'>
-    <window class='worksheet' name='GNI (2)'>
+    <window class='worksheet' name='CPI'>
       <cards>
         <edge name='left'>
           <strip size='160'>
@@ -1223,7 +1223,7 @@
       </cards>
       <simple-id uuid='{22234E1E-01D2-42F8-A543-C63CFD25F823}' />
     </window>
-    <window class='worksheet' maximized='true' name='GNI'>
+    <window class='worksheet' name='GNI'>
       <cards>
         <edge name='left'>
           <strip size='160'>
@@ -1252,7 +1252,7 @@
       </cards>
       <simple-id uuid='{8F23E024-A9BC-4344-9345-CF3095D70BE0}' />
     </window>
-    <window class='worksheet' name='Int_Homicides'>
+    <window class='worksheet' maximized='true' name='Int_Homicides'>
       <cards>
         <edge name='left'>
           <strip size='160'>
