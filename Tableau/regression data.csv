@@ -1,68 +1,68 @@
-country,regression coefficient
-Afghanistan,0
-Albania,0
-Angola,0
-Armenia,0.005034
-Azerbaijan,-0.233404
-Bangladesh,0
-Bolivia,-0.031999
-Bosnia and Herzegovina,0
-Bulgaria,0.342138
-Burundi,0
-Cambodia,0.015467
-Colombia,0
-Democratic Republic of Congo,0
-Djibouti,-0.126315
-Dominican Republic,0.264188
-East Timor,-0.272045
-Ecuador,0.321433
-Egypt,-0.105747
-El Salvador,-0.170291
-Ethiopia,0
-Georgia,0.097902
-Ghana,0.513401
-Guatemala,0.302606
-Guinea,0.001748
-Guyana,-0.087902
-Haiti,-0.047971
-Honduras,0
-Indonesia,0
-Iraq,0
-Jamaica,0.202555
-Jordan,0
-Kazakhstan,-0.038127
-Kenya,0
-Kosovo,0
-Kyrgyzstan,-0.206223
-Lebanon,0
-Liberia,0
-Macedonia,-0.253019
-Madagascar,0.056302
-Malawi,-0.240011
-Mali,0
-Mexico,0.454826
-Moldova,0.083242
-Mongolia,0
-Montenegro,-0.196206
-Morocco,-0.002834
-Mozambique,0
-Nepal,0.156369
-Nicaragua,0
-Nigeria,0
-Pakistan,-0.277502
-Panama,0.040439
-Paraguay,-0.275653
-Peru,-0.526096
-Philippines,0
-Rwanda,0
-Serbia,0
-Sierra Leone,0
-Sri Lanka,0.157464
-Thailand,0.10803
-Turkmenistan,0.042283
-Uganda,0
-Ukraine,0
-Vietnam,-0.080869
-West Bank and Gaza,0
-Yemen,-0.074108
-Zambia,-0.095571
+country,regression coefficient_log_odds,odds
+Afghanistan,0,1
+Albania,0,1
+Angola,0,1
+Armenia,0.005034,1.005046692
+Azerbaijan,-0.233404,0.791833608
+Bangladesh,0,1
+Bolivia,-0.031999,0.968507551
+Bosnia and Herzegovina,0,1
+Bulgaria,0.342138,1.407954582
+Burundi,0,1
+Cambodia,0.015467,1.015587233
+Colombia,0,1
+Democratic Republic of Congo,0,1
+Djibouti,-0.126315,0.881337182
+Dominican Republic,0.264188,1.302373019
+East Timor,-0.272045,0.761819978
+Ecuador,0.321433,1.379102603
+Egypt,-0.105747,0.899652231
+El Salvador,-0.170291,0.843419346
+Ethiopia,0,1
+Georgia,0.097902,1.1028547
+Ghana,0.513401,1.670964492
+Guatemala,0.302606,1.353381127
+Guinea,0.001748,1.001749529
+Guyana,-0.087902,0.915850626
+Haiti,-0.047971,0.953161428
+Honduras,0,1
+Indonesia,0,1
+Iraq,0,1
+Jamaica,0.202555,1.224527432
+Jordan,0,1
+Kazakhstan,-0.038127,0.962590684
+Kenya,0,1
+Kosovo,0,1
+Kyrgyzstan,-0.206223,0.813651612
+Lebanon,0,1
+Liberia,0,1
+Macedonia,-0.253019,0.776453129
+Madagascar,0.056302,1.057917126
+Malawi,-0.240011,0.786619208
+Mali,0,1
+Mexico,0.454826,1.575899153
+Moldova,0.083242,1.086804783
+Mongolia,0,1
+Montenegro,-0.196206,0.821842918
+Morocco,-0.002834,0.997170012
+Mozambique,0,1
+Nepal,0.156369,1.16925758
+Nicaragua,0,1
+Nigeria,0,1
+Pakistan,-0.277502,0.757674049
+Panama,0.040439,1.04126779
+Paraguay,-0.275653,0.759076285
+Peru,-0.526096,0.590907375
+Philippines,0,1
+Rwanda,0,1
+Serbia,0,1
+Sierra Leone,0,1
+Sri Lanka,0.157464,1.170538618
+Thailand,0.10803,1.114081167
+Turkmenistan,0.042283,1.04318966
+Uganda,0,1
+Ukraine,0,1
+Vietnam,-0.080869,0.922314507
+West Bank and Gaza,0,1
+Yemen,-0.074108,0.928571403
+Zambia,-0.095571,0.908853831
