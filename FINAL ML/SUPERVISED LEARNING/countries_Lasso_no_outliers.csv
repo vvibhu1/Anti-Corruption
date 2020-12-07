@@ -1,0 +1,59 @@
+,Variable,Coefficient,Odds
+1,Ghana,0.382393954,1.465789424
+2,Ecuador,0.352560314,1.422705463
+3,Kosovo,0.305600095,1.357439351
+4,Bulgaria,0.292860168,1.340255367
+5,Mexico,0.091384373,1.095690078
+6,Thailand,0.029501642,1.029941126
+7,Guatemala,0.017207475,1.017356377
+8,Albania,0,1
+9,Armenia,0,1
+10,Bangladesh,0,1
+11,Bosnia and Herzegovina,0,1
+12,Burundi,0,1
+13,Cambodia,0,1
+14,Colombia,0,1
+15,Dominican Republic,0,1
+16,Egypt,0,1
+17,Georgia,0,1
+18,Guinea,0,1
+19,Honduras,0,1
+20,Indonesia,0,1
+21,Jamaica,0,1
+22,Jordan,0,1
+23,Kenya,0,1
+24,Lebanon,0,1
+25,Madagascar,0,1
+26,Malawi,0,1
+27,Moldova,0,1
+28,Montenegro,0,1
+29,Nepal,0,1
+30,Nicaragua,0,1
+31,Pakistan,0,1
+32,Panama,0,1
+33,Philippines,0,1
+34,Rwanda,0,1
+35,Serbia,0,1
+36,Sri Lanka,0,1
+37,Uganda,0,1
+38,Ukraine,0,1
+39,West Bank and Gaza,0,1
+40,High Corruption,0,1
+41,Same,0,1
+42,Ethiopia,-0.00701587,0.993008683
+43,Haiti,-0.016980061,0.983163288
+44,Bolivia,-0.029142903,0.971277656
+45,Yemen,-0.05495921,0.946523756
+46,Mali,-0.077857715,0.925096045
+47,Paraguay,-0.102394476,0.902673399
+48,Mozambique,-0.105122016,0.900214675
+49,Morocco,-0.223580218,0.799650743
+50,Nigeria,-0.238901658,0.787492322
+51,Peru,-0.299108629,0.741478859
+52,Kazakhstan,-0.316574339,0.728640843
+53,Guyana,-0.374303321,0.687768265
+54,El Salvador,-0.393514797,0.674681334
+55,Kyrgyzstan,-0.398977684,0.671005675
+56,Macedonia,-0.441224028,0.643248585
+57,Vietnam,-0.52547148,0.591276524
+58,Zambia,-0.575534464,0.562404204
