@@ -1,72 +1,72 @@
-﻿country,main topic,main sector,﻿Region,numberofprojects
-Afghanistan,topic 4,Local Government,South and Central Asia (SCA),28
-Albania,topic 4,Rule of Law,Europe and Eurasia (E&E),8
-Angola,topic 4,Local Government,Sub-Saharan Africa (SSA),1
-Armenia,topic 4,Civil Society,Europe and Eurasia (E&E),4
-Azerbaijan,topic 4,Rule of Law & Legislature,Europe and Eurasia (E&E),5
-Bangladesh,topic 4,Local Government ,South and Central Asia (SCA),3
-Bolivia,topic 4,Local Government,Latin America and Caribbean (LAC),2
-Bosnia and Herzegovina,topic4 & topic 3,Rule of Law,Europe and Eurasia (E&E),6
-Bulgaria,topic 4,Local Government,Europe and Eurasia (E&E),1
-Burundi,topic 4,Local Government,Sub-Saharan Africa (SSA),2
-Cambodia,topic 3,Rule of Law,East Asia and Pacific (EAP),7
-Colombia,topic4 & topic 3,Rule of Law & Local Government,Latin America and Caribbean (LAC),4
-Democratic Republic of Congo,topic4 & topic 3,Rule of Law & Local Government,Sub-Saharan Africa (SSA),2
-Djibouti,topic 4,Independent Agencies,Sub-Saharan Africa (SSA),1
-Dominican Republic,topic 4,Rule of Law,Latin America and Caribbean (LAC),7
-East Timor,topic 4,Rule of Law,East Asia and Pacific (EAP),6
-Ecuador,topic 4,Local Government,Latin America and Caribbean (LAC),3
-Egypt,topic 3,Economic Growth,Middle East and North Africa (MENA),9
-El Salvador,topic 4,Rule of Law,Latin America and Caribbean (LAC),4
-Ethiopia,topic 4,Local Government,Sub-Saharan Africa (SSA),1
-Georgia,topic 3,Rule of Law,Europe and Eurasia (E&E),4
-Ghana,topic 4,Local Government,Sub-Saharan Africa (SSA),1
-Guatemala,topic 4,Rule of Law & Local Government,Latin America and Caribbean (LAC),5
-Guinea,topic 2,Economic Growth,Sub-Saharan Africa (SSA),1
-Guyana,topic 4,Rule of Law & Public Finance,Latin America and Caribbean (LAC),2
-Haiti,topic 4,Local Government,Latin America and Caribbean (LAC),1
-Honduras,topic4 & topic 3,Rule of Law & Local Government,Latin America and Caribbean (LAC),3
-Indonesia,topic 4,Rule of Law,East Asia and Pacific (EAP),17
-Iraq,topic 4,Local Government,Middle East and North Africa (MENA),8
-Jamaica,topic 4,Independent Agencies,Latin America and Caribbean (LAC),1
-Jordan,topic 4,Rule of Law & Public Finance,Middle East and North Africa (MENA),7
-Kazakhstan,topic 3,Rule of Law,South and Central Asia (SCA),4
-Kenya,topic 4,Public Finance,Sub-Saharan Africa (SSA),4
-Kosovo,topic 4,Local Government,Europe and Eurasia (E&E),6
-Kyrgyzstan,topic 4,Rule of Law,South and Central Asia (SCA),7
-Laos,topic 3,Economic Growth,East Asia and Pacific (EAP),1
-Lebanon,topic 4,Local Government,Middle East and North Africa (MENA),7
-Liberia,topic 4,Economic Growth,Sub-Saharan Africa (SSA),3
-Libya,topic 3,Rule of Law,Middle East and North Africa (MENA),1
-Macedonia,topic 4,Rule of Law & Local Government,Europe and Eurasia (E&E),7
-Madagascar,topic 4,Independent Agencies,Sub-Saharan Africa (SSA),1
-Malawi,topic 4,Governance,Sub-Saharan Africa (SSA),1
-Mali,topic 4,Local Government,Sub-Saharan Africa (SSA),1
-Mexico,topic 4,Local Government,Latin America and Caribbean (LAC),2
-Moldova,topic 4,Economic Growth,Europe and Eurasia (E&E),7
-Mongolia,topic 4,Local Government,East Asia and Pacific (EAP),8
-Montenegro,topic 4,Governance,Europe and Eurasia (E&E),3
-Morocco,topic 3,Local Government & Economic Growth,Middle East and North Africa (MENA),6
-Mozambique,topic 4,Local Government,Sub-Saharan Africa (SSA),1
-Nepal,topic 4,Rule of Law & Local Government,South and Central Asia (SCA),3
-Nicaragua,topic 4,Civil Society,Latin America and Caribbean (LAC),5
-Nigeria,topic 4,Agriculture and Food Security,Sub-Saharan Africa (SSA),4
-Pakistan,topic 4,Civil Society,South and Central Asia (SCA),5
-Panama,topic 4,Rule of Law,Latin America and Caribbean (LAC),1
-Paraguay,topic 4,Rule of Law,Latin America and Caribbean (LAC),4
-Peru,topic 4,Local Government,Latin America and Caribbean (LAC),5
-Philippines,topic 4,Independent Agencies,East Asia and Pacific (EAP),12
-Russia,topic 4,Rule of Law,Europe and Eurasia (E&E),5
-Rwanda,topic 4,Healthcare,Sub-Saharan Africa (SSA),1
-SENEGAL,topic 4,Governance,Sub-Saharan Africa (SSA),1
-Serbia,topic 4,Rule of Law,Europe and Eurasia (E&E),5
-Sierra Leone,topic 4,Agriculture and Food Security,Sub-Saharan Africa (SSA),2
-Sri Lanka,topic 4,Local Government ,South and Central Asia (SCA),3
-Thailand,topic 4,Civil Society ,East Asia and Pacific (EAP),1
-Turkmenistan,topic 4,Governance,South and Central Asia (SCA),1
-Uganda,topic 4,Public Finance,Sub-Saharan Africa (SSA),2
-Ukraine,topic 3,Rule of Law,Europe and Eurasia (E&E),8
-Vietnam,topic 3,Economic Growth,East Asia and Pacific (EAP),2
-West Bank and Gaza,topic 4,Rule of Law,Middle East and North Africa (MENA),10
-Yemen,topic 4,Civil Society,Middle East and North Africa (MENA),3
-Zambia,topic4 & topic 3,Rule of Law & Local Government,Sub-Saharan Africa (SSA),2
+﻿country,main topic,main sector,﻿Region,numberofprojects,main topic description
+Afghanistan,topic 4,Local Government,South and Central Asia (SCA),28,Rule of law strengthening for civil society
+Albania,topic 4,Rule of Law,Europe and Eurasia (E&E),8,Rule of law strengthening for civil society
+Angola,topic 4,Local Government,Sub-Saharan Africa (SSA),1,Rule of law strengthening for civil society
+Armenia,topic 4,Civil Society,Europe and Eurasia (E&E),4,Rule of law strengthening for civil society
+Azerbaijan,topic 4,Rule of Law & Legislature,Europe and Eurasia (E&E),5,Rule of law strengthening for civil society
+Bangladesh,topic 4,Local Government ,South and Central Asia (SCA),3,Rule of law strengthening for civil society
+Bolivia,topic 4,Local Government,Latin America and Caribbean (LAC),2,Rule of law strengthening for civil society
+Bosnia and Herzegovina,topic4 & topic 3,Rule of Law,Europe and Eurasia (E&E),6,"Rule of law strengthening for civil society & Projects that aim to strengthen governance of programs in democratic, political and health sector"
+Bulgaria,topic 4,Local Government,Europe and Eurasia (E&E),1,Rule of law strengthening for civil society
+Burundi,topic 4,Local Government,Sub-Saharan Africa (SSA),2,Rule of law strengthening for civil society
+Cambodia,topic 3,Rule of Law,East Asia and Pacific (EAP),7,"Projects that aim to strengthen governance of programs in democratic, political and health sector"
+Colombia,topic4 & topic 3,Rule of Law & Local Government,Latin America and Caribbean (LAC),4,"Rule of law strengthening for civil society & Projects that aim to strengthen governance of programs in democratic, political and health sector"
+Democratic Republic of Congo,topic4 & topic 3,Rule of Law & Local Government,Sub-Saharan Africa (SSA),2,"Rule of law strengthening for civil society & Projects that aim to strengthen governance of programs in democratic, political and health sector"
+Djibouti,topic 4,Independent Agencies,Sub-Saharan Africa (SSA),1,Rule of law strengthening for civil society
+Dominican Republic,topic 4,Rule of Law,Latin America and Caribbean (LAC),7,Rule of law strengthening for civil society
+East Timor,topic 4,Rule of Law,East Asia and Pacific (EAP),6,Rule of law strengthening for civil society
+Ecuador,topic 4,Local Government,Latin America and Caribbean (LAC),3,Rule of law strengthening for civil society
+Egypt,topic 3,Economic Growth,Middle East and North Africa (MENA),9,"Projects that aim to strengthen governance of programs in democratic, political and health sector"
+El Salvador,topic 4,Rule of Law,Latin America and Caribbean (LAC),4,Rule of law strengthening for civil society
+Ethiopia,topic 4,Local Government,Sub-Saharan Africa (SSA),1,Rule of law strengthening for civil society
+Georgia,topic 3,Rule of Law,Europe and Eurasia (E&E),4,"Projects that aim to strengthen governance of programs in democratic, political and health sector"
+Ghana,topic 4,Local Government,Sub-Saharan Africa (SSA),1,Rule of law strengthening for civil society
+Guatemala,topic 4,Rule of Law & Local Government,Latin America and Caribbean (LAC),5,Rule of law strengthening for civil society
+Guinea,topic 2,Economic Growth,Sub-Saharan Africa (SSA),1,Corruption reduction in the health sector
+Guyana,topic 4,Rule of Law & Public Finance,Latin America and Caribbean (LAC),2,Rule of law strengthening for civil society
+Haiti,topic 4,Local Government,Latin America and Caribbean (LAC),1,Rule of law strengthening for civil society
+Honduras,topic4 & topic 3,Rule of Law & Local Government,Latin America and Caribbean (LAC),3,"Rule of law strengthening for civil society & Projects that aim to strengthen governance of programs in democratic, political and health sector"
+Indonesia,topic 4,Rule of Law,East Asia and Pacific (EAP),17,Rule of law strengthening for civil society
+Iraq,topic 4,Local Government,Middle East and North Africa (MENA),8,Rule of law strengthening for civil society
+Jamaica,topic 4,Independent Agencies,Latin America and Caribbean (LAC),1,Rule of law strengthening for civil society
+Jordan,topic 4,Rule of Law & Public Finance,Middle East and North Africa (MENA),7,Rule of law strengthening for civil society
+Kazakhstan,topic 3,Rule of Law,South and Central Asia (SCA),4,"Projects that aim to strengthen governance of programs in democratic, political and health sector"
+Kenya,topic 4,Public Finance,Sub-Saharan Africa (SSA),4,Rule of law strengthening for civil society
+Kosovo,topic 4,Local Government,Europe and Eurasia (E&E),6,Rule of law strengthening for civil society
+Kyrgyzstan,topic 4,Rule of Law,South and Central Asia (SCA),7,Rule of law strengthening for civil society
+Laos,topic 3,Economic Growth,East Asia and Pacific (EAP),1,"Projects that aim to strengthen governance of programs in democratic, political and health sector"
+Lebanon,topic 4,Local Government,Middle East and North Africa (MENA),7,Rule of law strengthening for civil society
+Liberia,topic 4,Economic Growth,Sub-Saharan Africa (SSA),3,Rule of law strengthening for civil society
+Libya,topic 3,Rule of Law,Middle East and North Africa (MENA),1,"Projects that aim to strengthen governance of programs in democratic, political and health sector"
+Macedonia,topic 4,Rule of Law & Local Government,Europe and Eurasia (E&E),7,Rule of law strengthening for civil society
+Madagascar,topic 4,Independent Agencies,Sub-Saharan Africa (SSA),1,Rule of law strengthening for civil society
+Malawi,topic 4,Governance,Sub-Saharan Africa (SSA),1,Rule of law strengthening for civil society
+Mali,topic 4,Local Government,Sub-Saharan Africa (SSA),1,Rule of law strengthening for civil society
+Mexico,topic 4,Local Government,Latin America and Caribbean (LAC),2,Rule of law strengthening for civil society
+Moldova,topic 4,Economic Growth,Europe and Eurasia (E&E),7,Rule of law strengthening for civil society
+Mongolia,topic 4,Local Government,East Asia and Pacific (EAP),8,Rule of law strengthening for civil society
+Montenegro,topic 4,Governance,Europe and Eurasia (E&E),3,Rule of law strengthening for civil society
+Morocco,topic 3,Local Government & Economic Growth,Middle East and North Africa (MENA),6,"Projects that aim to strengthen governance of programs in democratic, political and health sector"
+Mozambique,topic 4,Local Government,Sub-Saharan Africa (SSA),1,Rule of law strengthening for civil society
+Nepal,topic 4,Rule of Law & Local Government,South and Central Asia (SCA),3,Rule of law strengthening for civil society
+Nicaragua,topic 4,Civil Society,Latin America and Caribbean (LAC),5,Rule of law strengthening for civil society
+Nigeria,topic 4,Agriculture and Food Security,Sub-Saharan Africa (SSA),4,Rule of law strengthening for civil society
+Pakistan,topic 4,Civil Society,South and Central Asia (SCA),5,Rule of law strengthening for civil society
+Panama,topic 4,Rule of Law,Latin America and Caribbean (LAC),1,Rule of law strengthening for civil society
+Paraguay,topic 4,Rule of Law,Latin America and Caribbean (LAC),4,Rule of law strengthening for civil society
+Peru,topic 4,Local Government,Latin America and Caribbean (LAC),5,Rule of law strengthening for civil society
+Philippines,topic 4,Independent Agencies,East Asia and Pacific (EAP),12,Rule of law strengthening for civil society
+Russia,topic 4,Rule of Law,Europe and Eurasia (E&E),5,Rule of law strengthening for civil society
+Rwanda,topic 4,Healthcare,Sub-Saharan Africa (SSA),1,Rule of law strengthening for civil society
+SENEGAL,topic 4,Governance,Sub-Saharan Africa (SSA),1,Rule of law strengthening for civil society
+Serbia,topic 4,Rule of Law,Europe and Eurasia (E&E),5,Rule of law strengthening for civil society
+Sierra Leone,topic 4,Agriculture and Food Security,Sub-Saharan Africa (SSA),2,Rule of law strengthening for civil society
+Sri Lanka,topic 4,Local Government ,South and Central Asia (SCA),3,Rule of law strengthening for civil society
+Thailand,topic 4,Civil Society ,East Asia and Pacific (EAP),1,Rule of law strengthening for civil society
+Turkmenistan,topic 4,Governance,South and Central Asia (SCA),1,Rule of law strengthening for civil society
+Uganda,topic 4,Public Finance,Sub-Saharan Africa (SSA),2,Rule of law strengthening for civil society
+Ukraine,topic 3,Rule of Law,Europe and Eurasia (E&E),8,"Projects that aim to strengthen governance of programs in democratic, political and health sector"
+Vietnam,topic 3,Economic Growth,East Asia and Pacific (EAP),2,"Projects that aim to strengthen governance of programs in democratic, political and health sector"
+West Bank and Gaza,topic 4,Rule of Law,Middle East and North Africa (MENA),10,Rule of law strengthening for civil society
+Yemen,topic 4,Civil Society,Middle East and North Africa (MENA),3,Rule of law strengthening for civil society
+Zambia,topic4 & topic 3,Rule of Law & Local Government,Sub-Saharan Africa (SSA),2,"Rule of law strengthening for civil society & Projects that aim to strengthen governance of programs in democratic, political and health sector"
